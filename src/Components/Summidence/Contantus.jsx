@@ -56,7 +56,7 @@ const Contactus = () => {
   };
 
   return (
-    <Container className="space_contact custom_container px-4">
+    <Container className="space_contact custom_container px-4 mt-5 pt-md-5">
       <Row className="row_bg pb-5 pb-lg-0 row_border">
         <Col lg={6} className="p-0 pe-lg-3">
           <img
