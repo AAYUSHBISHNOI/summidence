@@ -1,7 +1,7 @@
 import React from "react";
 import pre_school from "../../assets/img/School/Png/pre-school.png";
-import Kindergarten from "../../assets/img/School/Png/kindergarten.png";
-import pre_k from "../../assets/img/School/Png/pre-k.png";
+import Kindergarten from "../../assets/img/School/Png/grade-7-8.png";
+import pre_k from "../../assets/img/School/Png/Hero-img.png";
 import { Col, Container, Row } from "react-bootstrap";
 const preschoolData = [
   {
@@ -48,7 +48,7 @@ const OurSmarty = () => {
               <img
                 src={item.image}
                 alt={item.alt}
-                className="our_smarty_img w-100 h-100 mb-lg-4 mb-md-3 mb-sm-2 mb-1"
+                className="our_smarty_img w-100 h-100 mb-lg-4 mb-md-3 mb-sm-2 mb-1 rounded-5"
               />
               <p className="text-center ff_Poppins fw-semibold fs_24 lh_151 common_clr_blue pt-1 mb-0">
                 {item.text}

@@ -60,7 +60,7 @@ const Footer = () => {
               </a>
             </div>
           </Col>
-          <Col
+          {/* <Col
             lg={3}
             md={4}
             sm={5}
@@ -132,7 +132,7 @@ const Footer = () => {
                 Contact'Us
               </Button>
             </form>
-          </Col>
+          </Col> */}
         </Row>
       </div>
       <div className="bg_orange py-3">

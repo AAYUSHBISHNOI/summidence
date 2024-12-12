@@ -1,4 +1,4 @@
-import Hero_img from "../../assets/img/School/Png/Hero-img.png";
+import Hero_img from "../../assets/img/School/Png/2.jpeg";
 import { Col, Container, Row } from "react-bootstrap";
 const DoYou = () => {
   return (
@@ -21,7 +21,7 @@ const DoYou = () => {
             </div>
           </Col>
           <Col md={8} lg={6}>
-            <img className="w-100 h-100" src={Hero_img} alt="" />
+            <img className="w-100 h-100 rounded-5" src={Hero_img} alt="" />
           </Col>
         </Row>
       </Container>

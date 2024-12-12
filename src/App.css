@@ -205,8 +205,8 @@
 }
 /* //////////////////////////////////////////////////.                NAVBAR              //////////////////////////////////////////////// */
 .navbar_logo {
-  max-width: 150px;
-  max-height: 87px; 
+  max-width: 236px;
+  max-height: 114px;
 }
 .nav_link {
   font-size: 16px;
@@ -531,6 +531,7 @@
   margin-bottom: 40px;
 }
 .img_gallery {
+  border-radius: 24px;
   max-width: 282px;
   min-height: 164px;
 }
@@ -744,12 +745,22 @@
   height: 80px;
   object-fit: contain;
 }
-@media (max-width: 1023.9px) {
-nav ul {
+@media (max-width: 1199.9px) {
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 95px;
+    z-index: 12; /* Ensure it stays above other elements */
+    background-color: white; /* Add background color for better visibility */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for better UI */
+  }
+
+  nav ul {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 0;
+    top: 0; /* Aligns the menu with the fixed navbar */
     right: -100%;
     align-items: center;
     justify-content: center;
@@ -759,20 +770,20 @@ nav ul {
     z-index: 10;
     transition: right 0.3s ease-in-out;
     overflow: hidden;
-}
-.nav_link {
-    font-size: 20px;
-}
-nav ul.open {
+  }
+
+  nav ul.open {
     right: 0;
-}
-.navicon {
+  }
+
+  .navicon {
     background: none;
     border: none;
     cursor: pointer;
     z-index: 11;
+  }
 }
-}
+
 @media (min-width: 576px) {
 .fs_26{
     font-size: 26px;
@@ -1224,7 +1235,7 @@ nav ul.open {
 }
 .space_belajar {
     padding-top: 155px;
-    padding-bottom: 191px;
+    padding-bottom: 81px;
 }
 .space_aboutus {
     padding-top: 136px;

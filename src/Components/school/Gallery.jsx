@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import img_one from "../../assets/img/School/Png/1.jpeg";
 import img_two from "../../assets/img/School/Png/2.jpeg";
 import img_three from "../../assets/img/School/Png/3.jpeg";
@@ -16,36 +16,46 @@ const Gallery = () => {
             Gallery
           </h2>
           <div className="space_img_gallery pb-md-3">
+            <Row>
+              <Col md={3}>
+                <div className="mt-3">
+                  <img
+                    className="w-100 h-100 img_gallery me-auto d-flex"
+                    src={img_one}
+                    alt=""
+                  />
+                </div>
+              </Col>
+              <Col md={3}>
+                <div className=" mt-3">
+                  <img
+                    className="w-100 h-100 img_gallery mx-auto d-flex"
+                    src={img_six}
+                    alt=""
+                  />
+                </div>
+              </Col>
+              <Col md={3}>
+                <div className="  mt-3">
+                  <img
+                    className="w-100 h-100 img_gallery ms-auto d-flex"
+                    src={img_three}
+                    alt=""
+                  />
+                </div>
+              </Col>
+              <Col md={3}>
+                <div className=" mt-3">
+                  <img
+                    className="w-100 h-100 img_gallery me-auto d-flex"
+                    src={img_four}
+                    alt=""
+                  />
+                </div>
+              </Col>
+            </Row>
             <div className="row justify-content-between mb-2">
-              <div className="col-md-4 col-6 mt-3">
-                <img
-                  className="w-100 h-100 img_gallery me-auto d-flex"
-                  src={img_one}
-                  alt=""
-                />
-              </div>
-              <div className="col-md-4 col-6 mt-3">
-                <img
-                  className="w-100 h-100 img_gallery mx-auto d-flex"
-                  src={img_two}
-                  alt=""
-                />
-              </div>
-              <div className="col-md-4 col-6 mt-3">
-                <img
-                  className="w-100 h-100 img_gallery ms-auto d-flex"
-                  src={img_three}
-                  alt=""
-                />
-              </div>
-              <div className="col-md-4 col-6 mt-3">
-                <img
-                  className="w-100 h-100 img_gallery me-auto d-flex"
-                  src={img_four}
-                  alt=""
-                />
-              </div>
-              <div className="col-md-4 col-6 mt-3">
+              {/* <div className="col-md-4 col-6 mt-3">
                 <img
                   className="w-100 h-100 img_gallery mx-auto d-flex"
                   src={img_five}
@@ -58,13 +68,10 @@ const Gallery = () => {
                   src={img_six}
                   alt=""
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
-        <button className="common_bttn mx-auto d-flex ff_Poppins fw-medium fs_18 text-white lh_118 border-0 mt-4">
-          See More
-        </button>
       </Container>
     </div>
   );

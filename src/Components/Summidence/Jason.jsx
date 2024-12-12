@@ -21,14 +21,6 @@ const Jason = () => {
               transformative speaking programs and how it can help you achieve
               your goals. Your journey to success starts here!
             </p>
-            <a
-              href="https://www.youtube.com/watch?v=APgXnD--XTM&list=PL6QLrxQa57fUSMcrrFjTwme7NbnbWvdMJ"
-              className="text-decoration-none common_bttn ff_Poppins fw-light fs_16 lh_100 text-white"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Full Playlist
-            </a>
           </div>
         </div>
       </Container>

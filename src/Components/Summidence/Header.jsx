@@ -5,7 +5,7 @@ import header_img from "../../assets/img/webp/Hero-img.jpeg";
 const Header = () => {
   return (
     <>
-      <Container className="mt_90 p-xl-0">
+      <Container className="mt_90 p-xl-0 z-3">
         <Row className="p-xl-0 align-items-center text-center text-lg-start">
           <Col lg={7} className="p-xl-0">
             <div>

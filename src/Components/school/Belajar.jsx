@@ -3,16 +3,15 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Col, Container, Row } from "react-bootstrap";
 
-
 const Belajar = () => {
   const sectionRef = useRef(null);
-  
+
   const stats = [
     { id: 1, value: 87, text: "Class Participation" },
     { id: 2, value: 92, text: "Social Confidence" },
     { id: 3, value: 78, text: "Reduced Anxiety" },
     { id: 4, value: 85, text: "Academic Performance" },
-    { id: 5, value: 90, text: "Home Communication" }
+    { id: 5, value: 90, text: "Home Communication" },
   ];
 
   useEffect(() => {

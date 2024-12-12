@@ -20,9 +20,9 @@ const Navbar = () => {
           </a>
           {/* Navigation Links */}
           <ul
-            className={`d-flex flex-lg-row flex-column align-items-center mb-0 p-0 ${
+            className={`d-flex flex-xl-row flex-column align-items-center mb-0 p-0 ${
               isOpen ? "open" : ""
-            } gap-3 gap-lg-5 `}
+            } gap-3 gap-xl-5 `}
           >
             <li className="mb-0 list-unstyled">
               <a
@@ -82,7 +82,7 @@ const Navbar = () => {
           </ul>
           {/* Mobile Menu Button */}
           <button
-            className="open d-block d-lg-none navicon"
+            className="open d-block d-xl-none navicon"
             onClick={toggleMenu}
           >
             <div className={`menuicon ${isOpen ? "cross" : ""}`}></div>

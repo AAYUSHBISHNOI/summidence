@@ -17,9 +17,9 @@ const BeyondThe = () => {
             className="d-flex justify-content-center justify-content-lg-end p-0"
           >
             <div className="card_you_beyond w-100 h-100">
-              <College/>
+              <College />
               <p className="ff_Poppins fw-semibold fs_16 lh_125 common_clr_blue mt-2">
-                College Readiness
+                University Readiness
               </p>
               <div className=" d-flex align-items-center mt-2 gap-2">
                 <Arrow />
@@ -41,7 +41,7 @@ const BeyondThe = () => {
             className="d-flex justify-content-center p-0 mt-3 mt-md-0"
           >
             <div className="card_you_beyond w-100 h-100">
-             <LeaderShip/>
+              <LeaderShip />
               <p className="ff_Poppins fw-semibold fs_16 lh_125 common_clr_blue mt-2">
                 Leadership Development
               </p>
@@ -65,7 +65,7 @@ const BeyondThe = () => {
             className="p-0 d-flex justify-content-center mt-3 mt-md-0"
           >
             <div className="card_you_beyond w-100 h-100">
-           <FutureSuccess/>
+              <FutureSuccess />
               <p className="ff_Poppins fw-semibold fs_16 lh_125 common_clr_blue mt-2">
                 Future Success
               </p>
