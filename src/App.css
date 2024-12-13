@@ -126,7 +126,7 @@
   color: #403a3a;
 }
 .mt_90 {
-  margin-top: 20px;
+  margin-top: 90px;
 }
 /*********************************************************************  Width  ************************************************************************************************************/
 .para_jason{
@@ -750,9 +750,9 @@
     position: fixed;
     top: 0;
     width: 100%;
-    height: 95px;
+    /* height: 95px; */
     z-index: 12; /* Ensure it stays above other elements */
-    background-color: white; /* Add background color for better visibility */
+    background-color: white !important; /* Add background color for better visibility */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for better UI */
   }
 
@@ -783,7 +783,6 @@
     z-index: 11;
   }
 }
-
 @media (min-width: 576px) {
 .fs_26{
     font-size: 26px;
@@ -815,7 +814,7 @@
     padding: 80px 0;
 } 
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) { 
   .image_summidence {
     width: 337px;
 }
@@ -1152,7 +1151,7 @@
     font-size: 16px;
 }
 .mt_90 {
-    margin-top: 28px;
+    margin-top: 140px;
 }
 }
 @media (min-width: 1200px) { 
@@ -1287,8 +1286,5 @@
 }
 .fs_24 {
     font-size: 24px;
-}
-.mt_90 {
-    margin-top: 90px;
 }
 }

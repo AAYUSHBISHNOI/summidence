@@ -11,9 +11,9 @@ const Navbar = () => {
     }
   };
   return (
-    <nav className="z-3 py-md-4 py-3">
-      <div className="container custom_container">
-        <div className="d-flex align-items-center w-100  justify-content-between">
+    <nav className="z-3 position-fixed top-0 w-100 bg-white">
+      <div className="container custom_container w-100">
+        <div className="d-flex align-items-center w-100 justify-content-between py-2">
           {/* Logo */}
           <a href="/">
             <img className="navbar_logo" src={logo} alt="Logo" />

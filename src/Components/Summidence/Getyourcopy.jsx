@@ -22,7 +22,7 @@ const Getyourcopy = () => {
           <Col md={6} lg={4} className="mt-3 mt-lg-0">
             <div className="common_card w-100 h-100">
               <img
-                className="image_summidence card_img_rds"
+                className="image_summidence object-fit-cover card_img_rds"
                 src={image_one}
                 alt=""
               />
@@ -41,7 +41,7 @@ const Getyourcopy = () => {
           <Col md={6} lg={4} className="mt-3 mt-lg-0">
             <div className="common_card w-100 h-100">
               <img
-                className="image_summidence card_img_rds "
+                className="image_summidence object-fit-cover card_img_rds "
                 src={image_two}
                 alt=""
               />
@@ -60,7 +60,7 @@ const Getyourcopy = () => {
           <Col md={6} lg={4} className="mt-3 mt-lg-0">
             <div className="common_card w-100 h-100">
               <img
-                className="image_summidence card_img_rds "
+                className="image_summidence object-fit-cover card_img_rds "
                 src={image_three}
                 alt=""
               />
