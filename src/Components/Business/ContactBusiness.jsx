@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import contact_image from "../../assets/img/webp/contact-image.png";
 
-const ContactBusiness = () => {
+const ContactBusiness = ({ closeModal }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -63,6 +63,7 @@ const ContactBusiness = () => {
           message: "",
         });
         alert("Message sent successfully!");
+        closeModal(); // Close the modal after successful submission
       } catch (err) {
         setError("Failed to send message. Please try again later.");
       }

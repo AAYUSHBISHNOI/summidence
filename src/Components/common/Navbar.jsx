@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import logo from "../../assets/img/webp/footer-logo.png";
+import ContactBusiness from "../Business/ContactBusiness";
+import cross from "../../assets/img/webp/Cross.svg";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // Track the menu state
+  const [showContactForm, setShowContactForm] = useState(false); // Track the contact form visibility
+
   const toggleMenu = () => {
     setIsOpen(!isOpen); // Toggle the state when the menu icon is clicked
     if (!isOpen) {
@@ -10,6 +15,12 @@ const Navbar = () => {
       document.body.classList.remove("overflow-hidden"); // Allow body scroll when menu is closed
     }
   };
+
+  const toggleContactForm = () => {
+    setShowContactForm((prev) => !prev); // Toggle the contact form visibility
+    document.body.classList.toggle("overflow-hidden", !showContactForm); // Prevent scrolling when form is open
+  };
+
   return (
     <nav className="z-3 position-fixed top-0 w-100 bg-white">
       <div className="container custom_container w-100">
@@ -28,7 +39,7 @@ const Navbar = () => {
               <a
                 onClick={toggleMenu}
                 href="/"
-                className=" ff_Poppins fw-medium position-relative text-decoration-none nav_link"
+                className="ff_Poppins fw-medium position-relative text-decoration-none nav_link"
               >
                 Home
               </a>
@@ -37,7 +48,7 @@ const Navbar = () => {
               <a
                 onClick={toggleMenu}
                 href="/Business"
-                className=" ff_Poppins fw-medium position-relative text-decoration-none nav_link"
+                className="ff_Poppins fw-medium position-relative text-decoration-none nav_link"
               >
                 Business
               </a>
@@ -46,7 +57,7 @@ const Navbar = () => {
               <a
                 onClick={toggleMenu}
                 href="/school"
-                className=" ff_Poppins fw-medium position-relative text-decoration-none nav_link"
+                className="ff_Poppins fw-medium position-relative text-decoration-none nav_link"
               >
                 School
               </a>
@@ -55,7 +66,7 @@ const Navbar = () => {
               <a
                 onClick={toggleMenu}
                 href="/kids"
-                className=" ff_Poppins fw-medium position-relative text-decoration-none nav_link"
+                className="ff_Poppins fw-medium position-relative text-decoration-none nav_link"
               >
                 Students
               </a>
@@ -65,18 +76,18 @@ const Navbar = () => {
               <a
                 onClick={toggleMenu}
                 href="about-us"
-                className=" ff_Poppins fw-medium position-relative text-decoration-none nav_link"
+                className="ff_Poppins fw-medium position-relative text-decoration-none nav_link"
               >
                 About us
               </a>
             </li>
 
-            <li className=" list-unstyled">
+            <li className="list-unstyled">
               <button
                 className="common_bttn text-white ff_Poppins fw-normal fs_16"
-                onClick={toggleMenu}
+                onClick={toggleContactForm}
               >
-                Contact'Us
+                Contact Us
               </button>
             </li>
           </ul>
@@ -91,6 +102,21 @@ const Navbar = () => {
           </button>
         </div>
       </div>
+
+      {/* Contact Form Modal */}
+      {showContactForm && (
+        <div className="contact-modal">
+          <div className="contact-modal-content">
+            <button
+              onClick={() => setShowContactForm(false)}
+              className="close-btn"
+            >
+              <img src={cross} alt="" />
+            </button>
+            <ContactBusiness closeModal={() => setShowContactForm(false)} />
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
