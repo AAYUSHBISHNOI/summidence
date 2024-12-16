@@ -72,15 +72,15 @@ const ContactBusiness = ({ closeModal }) => {
 
   return (
     <Container className="space_contact custom_container mt-md-5 pt-md-5">
-      <Row className="row_bg pb-5 pb-lg-0 row_border">
-        <Col lg={6} className="p-0 pe-lg-3">
+      <Row className="row_bg pb-5 pb-md-0 row_border">
+        <Col md={6} className="p-0 pe-lg-3">
           <img
             className="w-100 h-100 contact_img_rds"
             src={contact_image}
             alt="Contact"
           />
         </Col>
-        <Col lg={6} className="text-center text-lg-start pb-lg-5 mt-4">
+        <Col md={6} className="text-center text-md-start pb-md-5 mt-4">
           <h2 className="ff_Jakarta fw-semibold fs_36 lh_175 text-white mb-0">
             Contact Us
           </h2>

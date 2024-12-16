@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../assets/img/webp/footer-logo.png";
-import ContactBusiness from "../Business/ContactBusiness";
+import ContactBusiness from "../Summidence/Contantus";
 import cross from "../../assets/img/webp/Cross.svg";
 
 const Navbar = () => {
@@ -17,14 +17,27 @@ const Navbar = () => {
   };
 
   const toggleContactForm = () => {
-    setShowContactForm((prev) => !prev); // Toggle the contact form visibility
-    document.body.classList.toggle("overflow-hidden", !showContactForm); // Prevent scrolling when form is open
+    setShowContactForm((prev) => {
+      const newState = !prev;
+      // Add or remove the 'overflow-hidden' class based on the new state
+      if (newState) {
+        document.body.classList.add("overflow-hidden"); // Prevent scrolling when form is open
+      } else {
+        document.body.classList.remove("overflow-hidden"); // Allow scrolling when form is closed
+      }
+      return newState;
+    });
+  };
+
+  const closeContactForm = () => {
+    setShowContactForm(false); // Close the modal
+    document.body.classList.remove("overflow-hidden"); // Ensure class is removed when closing the modal
   };
 
   return (
     <nav className="z-3 position-fixed top-0 w-100 bg-white">
-      <div className="container custom_container w-100">
-        <div className="d-flex align-items-center w-100 justify-content-between py-2">
+      <div className="container custom_container">
+        <div className="d-flex align-items-center justify-content-between py-2 bg-white">
           {/* Logo */}
           <a href="/">
             <img className="navbar_logo" src={logo} alt="Logo" />
@@ -107,13 +120,10 @@ const Navbar = () => {
       {showContactForm && (
         <div className="contact-modal">
           <div className="contact-modal-content">
-            <button
-              onClick={() => setShowContactForm(false)}
-              className="close-btn"
-            >
+            <button onClick={closeContactForm} className="close-btn">
               <img src={cross} alt="" />
             </button>
-            <ContactBusiness closeModal={() => setShowContactForm(false)} />
+            <ContactBusiness closeModal={closeContactForm} />
           </div>
         </div>
       )}

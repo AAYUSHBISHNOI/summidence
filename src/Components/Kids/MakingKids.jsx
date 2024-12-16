@@ -3,8 +3,8 @@ import { Col, Container, Row } from "react-bootstrap";
 import standing_kid from "../../assets/img/kids/png/header-kid.png";
 const MakingKids = () => {
   return (
-    <div className="py-lg-5 py-md-4 py-sm-3 py-2 px-2 px-md-1 bg-common_clr_blue">
-      <Container className="py-5">
+    <div className="py-5 mt-5 py-sm-3 px-2 px-md-1 bg-common_clr_blue">
+      <Container className="py-5 mt-lg-4">
         <Row className="align-items-center text-center text-lg-start">
           <Col lg={6}>
             <h1 className="ff_Poppins fw-semibold fs_54 text-white lh_122 mb-0">

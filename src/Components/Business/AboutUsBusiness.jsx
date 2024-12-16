@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Peoples, Secure } from "../common/Icon";
-import man_img from "../../assets/img/Business/Img/Png/about-us.png";
+import man_img from "../../assets/img/Business/Img/Png/About-us.jpeg";
 import card_img from "../../assets/img/Business/Img/Png/graph-img.png";
 
 const AboutUsBusiness = () => {

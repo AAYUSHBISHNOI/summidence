@@ -8,7 +8,7 @@ const Aboutus = () => {
     <div>
       <HeroAboutus />
       <Introduction />
-      <Contactus />
+      {/* <Contactus /> */}
     </div>
   );
 };

@@ -16,8 +16,8 @@ const Business = () => {
       <HowItWorks />
       <AboutUsBusiness />
       <OurProcess />
-      <Testimonials/>
-      <ContactBusiness />
+      <Testimonials />
+      {/* <ContactBusiness /> */}
     </div>
   );
 };

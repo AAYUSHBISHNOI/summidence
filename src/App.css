@@ -345,6 +345,7 @@
   border-radius: 24px;
 }
 .contact_img_rds {
+  max-width: 685px;
   border-top-right-radius: 24px;
   border-top-left-radius: 24px;
 }
@@ -438,10 +439,10 @@
   background-color: #fff;
 }
 .py-do-you {
-  padding: 60px 0;
+  padding: 130px 0;
 }
 .space_aboutus {
-  padding-top: 40px;
+  padding-top: 100px;
   padding-bottom: 40px;
 }
 .space_intro {
@@ -631,7 +632,7 @@
   border-radius: 100px;
   top: 0%;
   left: 8%;
-  z-index: 5;
+  z-index: 2;
 }
 .timelinecontainer.right::after {
   content: '';
@@ -643,7 +644,7 @@
   border-radius: 100px;
   top: 7%;
   left: 9%;
-  z-index: 5;
+  z-index: 2;
 }
 .left {
   left: -10%;
@@ -663,10 +664,6 @@
 .img_about_us{
   max-width: 305px;
   min-height: 295px;
-}
-.space_aboutus {
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 .space_introduction {
   margin-top: 40px;
@@ -690,7 +687,7 @@
   left: 24%;
 }
 .space_home {
-  padding: 40px 0;
+  padding: 110px 0;
 }
 .text_clr_grey {
   color: #9090a7;
@@ -763,7 +760,7 @@
   border-radius: 8px;
   width: 100%;
   /* height: 100%; */
-  min-height: 600px;
+  /* min-height: 600px; */
   /* max-width: 600px; */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
@@ -854,9 +851,6 @@
 .core_value_btn {
     padding: 20px;
 }
-.py-do-you {
-    padding: 80px 0;
-} 
 }
 @media (min-width: 768px) { 
   .image_summidence {
@@ -891,10 +885,10 @@
   min-height: 390px;
 }
 .card_img_about_us {
-    max-width: 233px;
-    min-height: 252px;
-    bottom: -21%;
-    left: 32%;
+  max-width: 133px;
+  min-height: 152px;
+  bottom: -11%;
+  left: 37%;
 }
 .img_business_hero{
     min-height: 530px;
@@ -954,9 +948,6 @@
 .sapce_how_business {
     padding: 60px 0;
 }
-.space_home {
-    padding: 60px 0;
-}
 .Book_btn {
     padding: 10px 35px;
 }
@@ -989,7 +980,7 @@
     font-size: 50px;
 }
 .space_aboutus {
-    padding-top: 60px;
+    padding-top: 140px;
     padding-bottom: 60px;
 }
 .fs_16 {
@@ -997,9 +988,6 @@
 }
 .core_value_btn {
     padding: 24px 23px 20px 43px;
-}
-.py-do-you {
-    padding: 100px 0;
 }
 .baby_boy {
     max-width: 285px;
@@ -1015,7 +1003,7 @@
     padding-bottom: 60px;
 }
 .space_contact {
-    margin-bottom: 60px;
+    margin-bottom:100px;
 }
 .space_testimonials {
     padding-top: 60px;
@@ -1046,6 +1034,14 @@
 .fs_48 {
     font-size: 36px;
 }
+.contact-modal .close-btn {
+  top: 135px;
+}
+.contact_img_rds {
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  border-top-right-radius: 0px;
+}
 }
 @media (min-width: 992px) {
 .gap_btn_core_value {
@@ -1062,6 +1058,9 @@
 }
 }
 @media (min-width: 1024px) {
+  .contact-modal .close-btn {
+    top: 83px;
+}
   .image_summidence {
     width: 296px;
 } 
@@ -1085,8 +1084,8 @@
     min-height: 568px;
 }
 .card_img_about_us {
-    bottom: -40%;
-    left: 18%;
+  bottom: -25%;
+  left: 18%;
 }
 .timelinecontainer.left::after {
     left: -3%;
@@ -1100,10 +1099,7 @@
 .fs_54 {
     font-size: 39px;
 }
-.contact_img_rds {
-    border-top-left-radius: 24px;
-    border-bottom-left-radius: 24px;
-}
+
 .card_how {
     max-width: 284px;
 }
@@ -1121,7 +1117,7 @@
     padding: 90px 0;
 }
 .space_home {
-    padding: 90px 0;
+    padding: 120px 0;
 }
 .img_gallery {
     max-width: 300px;
@@ -1140,10 +1136,6 @@
 .space_introduction {
     margin-top: 90px;
     margin-bottom: 120px;
-}
-.space_aboutus {
-    padding-top: 90px;
-    padding-bottom: 90px;
 }
 .fs_72 {
     font-size: 72px;
@@ -1202,10 +1194,13 @@
 .fs_64 {
     font-size: 55px;
 }
+.contact-modal .close-btn {
+  right: 85px;
+}
 .marquee-img { 
-  width: 150px !important;
+  width: 250px !important;
   margin: 0 90px !;
-  height: 150px !important;
+  height: 110px !important;
   object-fit: contain;
 }
 }
@@ -1246,7 +1241,7 @@
 }
 .space_introduction {
     margin-top: 90px;
-    margin-bottom: 245px;
+    margin-bottom: 145px;
 }
 .swiper-slide-2{
     width: 512.444px !important;
@@ -1264,7 +1259,7 @@
     padding: 100px 0;
 }
 .space_home {
-    padding: 130px 0;
+    padding: 140px 0;
 }
 .img_gallery {
     max-width: 390px;
@@ -1281,7 +1276,7 @@
     padding-bottom: 81px;
 }
 .space_aboutus {
-    padding-top: 136px;
+    padding-top: 198px;
     padding-bottom: 198px;
 }
 .custom_container {

@@ -1,7 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container } from "react-bootstrap";
+import ContactBusiness from "../Kids/ContactKids";
+import cross from "../../assets/img/webp/Cross.svg";
 
 const NuturingFuture = () => {
+  const [isOpen, setIsOpen] = useState(false); // Track the menu state
+  const [showContactForm, setShowContactForm] = useState(false); // Track the contact form visibility
+
+  const toggleContactForm = () => {
+    setShowContactForm((prev) => {
+      const newState = !prev;
+      // Add or remove the 'overflow-hidden' class based on the new state
+      if (newState) {
+        document.body.classList.add("overflow-hidden"); // Prevent scrolling when form is open
+      } else {
+        document.body.classList.remove("overflow-hidden"); // Allow scrolling when form is closed
+      }
+      return newState;
+    });
+  };
+
+  const closeContactForm = () => {
+    setShowContactForm(false); // Close the modal
+    document.body.classList.remove("overflow-hidden"); // Ensure class is removed when closing the modal
+  };
   return (
     <div className="mb-5 pb-lg-5 px-2 px-md-1">
       <Container>
@@ -110,6 +132,25 @@ const NuturingFuture = () => {
             </p>
           </div>
         </div>
+        <div className=" d-flex justify-content-center align-items-center mt-5">
+          <button
+            className="common_bttn text-white ff_Poppins fw-normal fs_16"
+            onClick={toggleContactForm}
+          >
+            Contact Us
+          </button>
+        </div>
+        {/* Contact Form Modal */}
+        {showContactForm && (
+          <div className="contact-modal">
+            <div className="contact-modal-content">
+              <button onClick={closeContactForm} className="close-btn">
+                <img src={cross} alt="" />
+              </button>
+              <ContactBusiness closeModal={closeContactForm} />
+            </div>
+          </div>
+        )}
       </Container>
     </div>
   );

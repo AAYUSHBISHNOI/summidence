@@ -22,7 +22,7 @@ const School = () => {
       <Flexible />
       <Belajar />
       <Gallery />
-      <ContactSchool />
+      {/* <ContactSchool /> */}
     </div>
   );
 };

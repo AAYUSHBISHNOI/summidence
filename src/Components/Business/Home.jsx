@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import header_img from "../../assets/img/Business/Img/Png/Business-hero.jpeg";
+import header_img from "../../assets/img/Business/Img/Png/Bussiness-hero.jpeg";
 
 const Home = () => {
   return (
@@ -27,7 +27,7 @@ const Home = () => {
           </Col>
           <Col lg={6} className="mt-4 mt-lg-0">
             <img
-              className="w-100 h-100 img_business_hero"
+              className="w-100 h-100 img_business_hero object-fit-cover"
               src={header_img}
               alt=""
             />

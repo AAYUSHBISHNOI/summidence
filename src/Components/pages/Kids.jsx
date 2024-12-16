@@ -10,7 +10,7 @@ const Kids = () => {
       <MakingKids />
       <CultivateThinking />
       <NuturingFuture />
-      <ContactKids />
+      {/* <ContactKids /> */}
     </>
   );
 };
