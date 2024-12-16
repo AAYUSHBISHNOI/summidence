@@ -1,38 +1,33 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom"; // Import useLocation
 import logo from "../../assets/img/webp/footer-logo.png";
 import ContactBusiness from "../Summidence/Contantus";
 import cross from "../../assets/img/webp/Cross.svg";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false); // Track the menu state
-  const [showContactForm, setShowContactForm] = useState(false); // Track the contact form visibility
+  const [isOpen, setIsOpen] = useState(false);
+  const [showContactForm, setShowContactForm] = useState(false);
+  const location = useLocation(); // Get the current location (pathname)
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen); // Toggle the state when the menu icon is clicked
-    if (!isOpen) {
-      document.body.classList.add("overflow-hidden"); // Prevent body scroll when menu is open
-    } else {
-      document.body.classList.remove("overflow-hidden"); // Allow body scroll when menu is closed
-    }
+    setIsOpen(!isOpen);
+    document.body.classList.toggle("overflow-hidden", isOpen);
   };
 
   const toggleContactForm = () => {
     setShowContactForm((prev) => {
-      const newState = !prev;
-      // Add or remove the 'overflow-hidden' class based on the new state
-      if (newState) {
-        document.body.classList.add("overflow-hidden"); // Prevent scrolling when form is open
-      } else {
-        document.body.classList.remove("overflow-hidden"); // Allow scrolling when form is closed
-      }
-      return newState;
+      document.body.classList.toggle("overflow-hidden", !prev);
+      return !prev;
     });
   };
 
   const closeContactForm = () => {
-    setShowContactForm(false); // Close the modal
-    document.body.classList.remove("overflow-hidden"); // Ensure class is removed when closing the modal
+    setShowContactForm(false);
+    document.body.classList.remove("overflow-hidden");
   };
+
+  // Helper function to check if link is active
+  const isActive = (path) => location.pathname === path;
 
   return (
     <nav className="z-3 position-fixed top-0 w-100 bg-white">
@@ -52,7 +47,9 @@ const Navbar = () => {
               <a
                 onClick={toggleMenu}
                 href="/"
-                className="ff_Poppins fw-medium position-relative text-decoration-none nav_link"
+                className={`ff_Poppins fw-medium position-relative text-decoration-none nav_link ${
+                  isActive("/") ? "text-orange" : "" // Active class for Home
+                }`}
               >
                 Home
               </a>
@@ -61,7 +58,9 @@ const Navbar = () => {
               <a
                 onClick={toggleMenu}
                 href="/Business"
-                className="ff_Poppins fw-medium position-relative text-decoration-none nav_link"
+                className={`ff_Poppins fw-medium position-relative text-decoration-none nav_link ${
+                  isActive("/Business") ? "text-orange" : "" // Active class for Business
+                }`}
               >
                 Business
               </a>
@@ -70,7 +69,9 @@ const Navbar = () => {
               <a
                 onClick={toggleMenu}
                 href="/school"
-                className="ff_Poppins fw-medium position-relative text-decoration-none nav_link"
+                className={`ff_Poppins fw-medium position-relative text-decoration-none nav_link ${
+                  isActive("/school") ? "text-orange" : "" // Active class for School
+                }`}
               >
                 School
               </a>
@@ -79,22 +80,24 @@ const Navbar = () => {
               <a
                 onClick={toggleMenu}
                 href="/kids"
-                className="ff_Poppins fw-medium position-relative text-decoration-none nav_link"
+                className={`ff_Poppins fw-medium position-relative text-decoration-none nav_link ${
+                  isActive("/kids") ? "text-orange" : "" // Active class for Students
+                }`}
               >
                 Students
               </a>
             </li>
-
             <li className="mb-0 list-unstyled">
               <a
                 onClick={toggleMenu}
-                href="about-us"
-                className="ff_Poppins fw-medium position-relative text-decoration-none nav_link"
+                href="/about-us"
+                className={`ff_Poppins fw-medium position-relative text-decoration-none nav_link ${
+                  isActive("/about-us") ? "text-orange" : "" // Active class for About Us
+                }`}
               >
                 About us
               </a>
             </li>
-
             <li className="list-unstyled">
               <button
                 className="common_bttn text-white ff_Poppins fw-normal fs_16"

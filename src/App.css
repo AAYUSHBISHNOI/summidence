@@ -786,6 +786,11 @@
   height: 80px;
   object-fit: contain;
 }
+
+
+.text-orange {
+  color: orange !important;
+}
 @media (max-width: 1199.9px) {
   nav {
     position: fixed;

@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Marquee from "react-fast-marquee";
 import img_one from "../../assets/img/webp/Anti-dumping.jpg";
-import img_two from "../../assets/img/webp/Tract.png";
+import img_two from "../../assets/img/webp/Tract-Logo.jpg";
 import img_three from "../../assets/img/webp/Mainfreight_Logo.png";
 import img_four from "../../assets/img/webp/4.png";
 import img_five from "../../assets/img/webp/5.png";
