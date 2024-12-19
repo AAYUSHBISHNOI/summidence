@@ -73,7 +73,7 @@ const Navbar = () => {
                   isActive("/school") ? "text-orange" : "" // Active class for School
                 }`}
               >
-                School
+                Schools
               </a>
             </li>
             <li className="mb-0 list-unstyled">

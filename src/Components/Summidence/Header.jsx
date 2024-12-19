@@ -19,9 +19,6 @@ const Header = () => {
                 believe that mastering public speaking is the key that unlocks
                 both personal growth and professional success.
               </p>
-              <button className="common_bttn ff_Poppins fw-light fs_18 lh_175 text-white mt-2">
-                Learn More
-              </button>
             </div>
           </Col>
           <Col lg={5} className="p-xl-0 mt-2 mt-md-4 mt-lg-0">

@@ -563,6 +563,12 @@
   border-right: 2.13px solid #f7931f;
   padding: 12px 0;
 }
+.img_ou_gallery {
+  width: 292px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
 .cursor-pointer {
   cursor: pointer;
 }
@@ -681,10 +687,10 @@
   background: linear-gradient(125.65deg, #FEF5DB 0.81%, #F7931F 100%);
 }
 .card_img_about_us {
-  max-width: 116px;
-  min-height: 111px;
+  max-width: 216px;
+  min-height: 211px;
   bottom: -25%;
-  left: 24%;
+  left: 14%;
 }
 .space_home {
   padding: 110px 0;
@@ -856,6 +862,10 @@
 }
 }
 @media (min-width: 768px) { 
+  .img_ou_gallery {
+    width: 340px;
+    height: 340px;
+}
   .image_summidence {
     width: 337px;
 }
@@ -888,8 +898,8 @@
   min-height: 390px;
 }
 .card_img_about_us {
-  max-width: 133px;
-  min-height: 152px;
+  max-width: 233px;
+  min-height: 252px;
   bottom: -11%;
   left: 37%;
 }
@@ -1061,6 +1071,10 @@
 }
 }
 @media (min-width: 1024px) {
+  .img_ou_gallery {
+    width: 310px;
+    height: 330px;
+}
   .contact-modal .close-btn {
     top: 83px;
 }
@@ -1208,6 +1222,10 @@
 }
 }
 @media (min-width: 1320px) {
+  .img_ou_gallery {
+    width: 390px; 
+    height: 390px; 
+  }
   .navbar_logo {
     max-width: 290px;
     max-height: 97px;

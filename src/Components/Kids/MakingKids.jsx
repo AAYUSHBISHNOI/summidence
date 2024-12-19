@@ -16,9 +16,6 @@ const MakingKids = () => {
               natural expressiveness into lifelong communication skills.
               Together, we build tomorrow’s leaders, today.
             </p>
-            <button className="ff_Poppins fw-semibold fs_18 lh_118 text-white Book_btn mt-3 mt-lg-5">
-              Book a free live class
-            </button>
           </Col>
           <Col lg={6} className="mt-4 mt-lg-0">
             <img

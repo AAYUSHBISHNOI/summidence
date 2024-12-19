@@ -27,7 +27,7 @@ const Home = () => {
           </Col>
           <Col lg={6} className="mt-4 mt-lg-0">
             <img
-              className="w-100 h-100 img_business_hero object-fit-cover"
+              className="w-100 h-100 img_business_hero object-fit-cover rounded-4"
               src={header_img}
               alt=""
             />

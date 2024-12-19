@@ -68,9 +68,9 @@ const AboutUsBusiness = () => {
           </Col>
           <Col lg={6} className="mt-4">
             <div className="position-relative">
-              <img className="w-100 h-100 " src={man_img} alt="" />
+              <img className="w-100 h-100 rounded-4" src={man_img} alt="" />
               <img
-                className="w-100 position-absolute card_img_about_us z-3"
+                className="w-100 position-absolute card_img_about_us z-1"
                 src={card_img}
                 alt=""
               />

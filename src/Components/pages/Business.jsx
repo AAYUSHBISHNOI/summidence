@@ -7,12 +7,14 @@ import ContactBusiness from "../Business/ContactBusiness";
 import OurProcess from "../Business/OurProcess";
 import BusinessCase from "../Business/BusinessCase";
 import Testimonials from "../Summidence/Testimonials";
+import OurGaleery from "../Business/OurGaleery";
 
 const Business = () => {
   return (
     <div>
       <Home />
       <BusinessCase />
+      <OurGaleery />
       <HowItWorks />
       <AboutUsBusiness />
       <OurProcess />
