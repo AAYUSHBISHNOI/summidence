@@ -319,6 +319,7 @@
 .slider_img{
   max-width: 110px;
   min-height: 110px;
+  border-radius: 100px;
 }
 .comma_img{
   max-width: 50px;
@@ -335,6 +336,7 @@
 }
 .card_slider {
   max-width: 434px;
+  height: 100%;
   min-height: 309px;
   background-color: #fdfdfd;
   border-radius: 26px;
@@ -862,6 +864,9 @@
 }
 }
 @media (min-width: 768px) { 
+  .card_slider {
+    min-height: 380px;
+  }
   .img_ou_gallery {
     width: 340px;
     height: 340px;
@@ -1093,6 +1098,7 @@
 }
 .card_slider {
     padding: 36px;
+    min-height: 320px;
 }
 .text_unlock {
     font-size: 35px;

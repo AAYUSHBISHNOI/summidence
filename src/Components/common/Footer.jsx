@@ -19,7 +19,7 @@ const Footer = () => {
     <div className="footer">
       <div className="footer_container mx-auto px-4">
         <Row className="space_row d-flex justify-content-between">
-          <Col lg={3}>
+          <Col lg={5}>
             <a href="/">
               <img
                 className="footer_img w-100"
@@ -27,7 +27,20 @@ const Footer = () => {
                 alt="footer-img"
               />
             </a>
-            <div className="gap-3 d-flex align-items-center mt-sm-4 mt-2 pt-1 justify-content-lg-center">
+            <div>
+              <p className="fs_16 ff_Poppins lh_125 txt_clr_dark_blue">
+                We acknowledge the Traditional Owners of the land where we work
+                and live, the Wurundjeri Woi-wurrung and Bunurong/Boon Wurrung
+                peoples of the Kulin Nation and pay our respects to Elders past
+                and present. We celebrate the stories, culture, and traditions
+                of Aboriginal and Torres Strait Islander Elders of all
+                communities who also work and live on this land. We acknowledge
+                and honour the unbroken spiritual, cultural, and political
+                connection they have maintained to this unique place for more
+                than 2000 generations.
+              </p>
+            </div>
+            <div className="gap-3 d-flex mt-sm-4 mt-2 pt-1 justify-content-start align-items-start">
               <a
                 href="https://www.instagram.com/"
                 className="footer_social_icon d-flex align-items-center justify-content-center"
