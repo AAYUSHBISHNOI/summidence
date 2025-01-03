@@ -100,7 +100,10 @@ const CultivateThinking = () => {
                         className="image_navtab w-100 h-100 object-fit-cover"
                       />
                     </Col>
-                    <Col lg={7} className="mt-4 mt-lg-0">
+                    <Col
+                      lg={7}
+                      className="mt-4 mt-lg-0 d-flex flex-column justify-content-center align-items-center"
+                    >
                       <div className="d-md-flex gap-4 mb-4 pb-2">
                         <span>
                           <img src={three} alt="three" />
@@ -167,7 +170,7 @@ const CultivateThinking = () => {
                       />
                     </Col>
                     <Col lg={7} className="mt-4 mt-lg-0">
-                      <div className="mb-4 pb-2">
+                      <div className="mb-4 pb-2 text-center d-flex flex-column align-items-center text-lg-start justify-content-lg-start align-items-lg-start">
                         <p className="ff_Poppins fw-semibold fs_36 lh_140 text-black mb-0">
                           The Magic of Early Communication Skills
                         </p>
@@ -202,7 +205,7 @@ const CultivateThinking = () => {
                       />
                     </Col>
                     <Col lg={7} className="mt-4 mt-lg-0">
-                      <div className="mb-4 pb-2">
+                      <div className="mb-4 pb-2 text-center d-flex flex-column align-items-center text-lg-start justify-content-lg-start align-items-lg-start">
                         <p className="ff_Poppins fw-semibold fs_36 lh_140 text-black mb-0">
                           What Makes Summidence Kids Special?
                         </p>

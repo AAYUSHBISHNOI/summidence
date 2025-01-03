@@ -13,8 +13,8 @@ const Home = () => {
           >
             <div>
               <h1 className="ff_Poppins fw-semibold fs_54 lh_125 text-white mb-0">
-                Transform Your Organization Through the Power of Public
-                SpeakingInvest in Your Most Valuable Asset
+                Invest in Your Most Valuable Asset. Transform Your Organization
+                Through the Power of Public Speaking
               </h1>
               <p className="ff_Poppins fw-medium fs_16 lh_158 text-white mt-3 mb-0">
                 In today's competitive business landscape, the ability to

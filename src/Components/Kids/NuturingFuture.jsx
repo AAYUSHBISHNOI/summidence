@@ -45,14 +45,11 @@ const NuturingFuture = () => {
                 Beyond Public Speaking
               </h2>
               <p className=" ff_Poppins fw-medium fs_14 lh_132 common_clr_black mb-0 mt-2">
-                Our programs foster emotional intelligence, enhancing emotional
-                understanding, empathy, and social awareness. We promote
-                critical thinking through structured thought processes, argument
-                building, and creative problem-solving. Additionally, children
-                develop social skills that lead to natural leadership, stronger
-                friendships, and improved team collaboration, all contributing
-                to academic excellence through enhanced class participation and
-                learning abilities.
+                Our programs enhance emotional intelligence, critical thinking,
+                and social skills. Children develop empathy, social awareness,
+                structured thinking, and problem-solving abilities. These skills
+                foster leadership, friendships, teamwork, and academic
+                excellence through better class participation and learning.
               </p>
             </div>
           </div>
@@ -62,14 +59,11 @@ const NuturingFuture = () => {
                 Our Programs Include
               </h2>
               <p className=" ff_Poppins fw-medium fs_14 lh_132 common_clr_black mb-0 mt-2">
-                We offer weekly sessions consisting of 90-minute workshops that
-                provide practice opportunities, peer interaction, performance
-                recordings, and progress tracking. Special events like mini-TED
-                talks, story showcases, parent demonstration days, public
-                speaking competitions, and group performances enrich the
-                experience. Take-home materials, including practice exercises,
-                parent guidance, progress journals, video recordings, and
-                achievement certificates, support ongoing development.
+                Speech preparation structure, body language basics, introduction
+                to pauses, gestures to bring impact to presentations and
+                increase listening skills to evaluate speeches and self improve
+                them. Personal evaluation to individual speeches in self and
+                group learning environment.
               </p>
             </div>
           </div>
@@ -79,10 +73,9 @@ const NuturingFuture = () => {
                 Success Indicators
               </h2>
               <p className=" ff_Poppins fw-medium fs_14 lh_132 common_clr_black mb-0 mt-2">
-                Our programs yield impressive results: 92% of parents see
-                improved confidence, 87% notice better social skills, 84% report
-                enhanced academic performance, 90% observe improved family
-                communication, and 89% see reduced social anxiety.
+                Students observe self improvement in speech giving abilities and
+                increase in their confidence. Marked improvement in every speech
+                that is incrementally delivered.
               </p>
             </div>
           </div>
@@ -106,13 +99,11 @@ const NuturingFuture = () => {
                 Special Features
               </h2>
               <p className=" ff_Poppins fw-medium fs_14 lh_132 common_clr_black mb-0 mt-2">
-                We provide a safe learning environment with certified
-                instructors, age-appropriate content, a bullying-free zone, and
-                positive reinforcement. Regular updates, including weekly
-                progress reports, video highlights, parent consultations,
-                achievement celebrations, and a development roadmap, empower
-                your child to develop lasting communication skills, preparing
-                them for a bright future in school, relationships, and beyond.
+                We provide a safe learning program combining age and skill
+                appropriate group of students and provide them a safe space to
+                learn from each other. Commending each other for progress made
+                is central to how we learn together. Use of AI technology is an
+                additional benefit to joining Summidence.
               </p>
             </div>
           </div>

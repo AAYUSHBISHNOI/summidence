@@ -3,10 +3,8 @@ import DoYou from "../school/DoYou";
 import OurCoreValue from "../school/OurCoreValue";
 import AboutOurSchool from "../school/AboutOurSchool";
 import Gallery from "../school/Gallery";
-import Belajar from "../school/Belajar";
 import OurSmarty from "../school/OurSmarty";
 import TheOnlyWay from "../school/TheOnlyWay";
-import ContactSchool from "../school/ContactSchool";
 import BeyondThe from "../school/BeyondThe";
 import Flexible from "../school/Flexible";
 
@@ -20,7 +18,7 @@ const School = () => {
       <TheOnlyWay />
       <BeyondThe />
       <Flexible />
-      <Belajar />
+      {/* <Belajar /> */}
       <Gallery />
       {/* <ContactSchool /> */}
     </div>

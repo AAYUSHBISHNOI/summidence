@@ -10,8 +10,8 @@ import img_six from "../../assets/img/Business/Img/Png/Our-Gallery-7.jpeg";
 const OurGaleery = () => {
   return (
     <div>
-      <Container className="p-lg-0 ">
-        <div className="text-center mt-md-5 pt-lg-5">
+      <Container className="p-lg-0 mb-xl-5 pb-xl-5">
+        <div className="text-center mb-5 pb-5">
           <h2 className=" ff_Poppins fs_56 fw-bold lh_125 common_clr_blue mb-0">
             Our Gallery
           </h2>
@@ -19,12 +19,12 @@ const OurGaleery = () => {
             {[img_one, img_two, img_three, img_four, img_five, img_six].map(
               (img, index) => {
                 const marginClasses = [
-                  "mt-3 md:!mt-0 lg:!mt-0", // Image 1
-                  "mt-3 md:!mt-0 lg:!mt-0", // Image 2
-                  "mt-3 md:!mt-0 lg:!mt-0", // Image 3
-                  "mt-3 md:!mt-5 lg:!mt-5", // Image 4
-                  "mt-3 md:!mt-5 lg:!mt-5", // Image 5
-                  "mt-3 md:!mt-5 lg:!mt-5", // Image 6
+                  "mt-3 md:!mt-0 lg:!mt-0",
+                  "mt-3 md:!mt-0 lg:!mt-0",
+                  "mt-3 md:!mt-0 lg:!mt-0",
+                  "mt-3 md:!mt-5 lg:!mt-5",
+                  "mt-3 md:!mt-5 lg:!mt-5",
+                  "mt-3 md:!mt-5 lg:!mt-5",
                 ];
 
                 return (

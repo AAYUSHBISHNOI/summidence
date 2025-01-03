@@ -12,7 +12,7 @@
   font-family: "Plus Jakarta Sans" !important;
 }
 .fs_14 {
-  font-size: 14px;
+  font-size: 13px;
 }
 .fs_16 {
   font-size: 14px;
@@ -441,7 +441,8 @@
   background-color: #fff;
 }
 .py-do-you {
-  padding: 130px 0;
+  padding-bottom: 40px;
+  padding-top: 130px;
 }
 .space_aboutus {
   padding-top: 100px;
@@ -531,6 +532,7 @@
 }
 /*/////////////////////  Gallery  //////////////////////////////////////////////*/
 .space_gallery {
+  margin-top: 40px;
   margin-bottom: 40px;
 }
 .img_gallery {
@@ -869,7 +871,7 @@
   }
   .img_ou_gallery {
     width: 340px;
-    height: 340px;
+    height: 245px;
 }
   .image_summidence {
     width: 337px;
@@ -978,13 +980,11 @@
 }
 .img_gallery {
     min-height: 308px;
+    max-width: 320px;
 }
 .space_gallery {
+  margin-top: 60px;
     margin-bottom: 60px;
-}
-.img_gallery {
-    max-width: 220px;
-    min-height: 260px;
 }
 .space_belajar {
     padding-top: 60px;
@@ -1078,7 +1078,6 @@
 @media (min-width: 1024px) {
   .img_ou_gallery {
     width: 310px;
-    height: 330px;
 }
   .contact-modal .close-btn {
     top: 83px;
@@ -1150,6 +1149,7 @@
     margin-top: 40px;
 }
 .space_gallery {
+  margin-top: 90px;
     margin-bottom: 90px;
 }
 .space_belajar {
@@ -1229,9 +1229,9 @@
 }
 @media (min-width: 1320px) {
   .img_ou_gallery {
-    width: 390px; 
-    height: 390px; 
-  }
+    width: 360px;
+    height: 260px;
+}
   .navbar_logo {
     max-width: 290px;
     max-height: 97px;
@@ -1290,7 +1290,7 @@
 }
 .img_gallery {
     max-width: 390px;
-    min-height: 260px;
+    min-height: 320px;
 }
 .space_img_gallery {
     margin-top: 68px;
@@ -1352,5 +1352,11 @@
 }
 .fs_24 {
     font-size: 24px;
+}
+}
+@media (min-width: 1438px) {
+  .img_ou_gallery {
+    width: 430px ;
+    height: 300px;
 }
 }

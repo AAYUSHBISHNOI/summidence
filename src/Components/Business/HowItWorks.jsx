@@ -1,6 +1,8 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { Card_Box, Card_calendar, Card_graph } from "../common/Icon";
+import leadership_img from "../../assets/img//Business/Img/Svg/Leadership-Development.svg";
+import Team_img from "../../assets/img//Business/Img/Svg/Team-Performance.svg";
+import Client_img from "../../assets/img//Business/Img/Svg/Client-Relationship.svg";
 
 const HowItWorks = () => {
   return (
@@ -18,7 +20,7 @@ const HowItWorks = () => {
             className="p-lg-0 d-flex justify-content-lg-center"
           >
             <div className="card_how w-100 h-100">
-              <Card_Box />
+              <img src={leadership_img} alt="" />
               <p className="ff_Poppins fw-semibold lh_118 fs_24 common_clr_blue mb-0 mt-3">
                 Leadership Development
               </p>
@@ -34,7 +36,7 @@ const HowItWorks = () => {
             className="p-lg-0 d-flex justify-content-lg-center mt-3 mt-md-0"
           >
             <div className="card_how w-100 h-100">
-              <Card_calendar />
+              <img src={Team_img} alt="" />
               <p className="ff_Poppins fw-semibold lh_118 fs_24 common_clr_blue mb-0 mt-3">
                 Team Performance
               </p>
@@ -51,7 +53,7 @@ const HowItWorks = () => {
             className="p-lg-0 d-flex justify-content-lg-center mt-3 mt-lg-0"
           >
             <div className="card_how w-100 h-100">
-              <Card_graph />
+              <img src={Client_img} alt="" />
               <p className="ff_Poppins fw-semibold lh_118 fs_24 common_clr_blue mb-0 mt-3">
                 Client Relations
               </p>

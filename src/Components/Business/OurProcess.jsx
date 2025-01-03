@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { Card_Box, Card_calendar, Card_graph } from "../common/Icon";
 import ContactBusiness from "../Business/ContactBusiness";
 import cross from "../../assets/img/webp/Cross.svg";
+import assessment_img from "../../assets/img/Business/Img/Svg/Assessment.svg";
+import customizetion_img from "../../assets/img/Business/Img/Svg/Customize.svg";
+import Delivery_img from "../../assets/img/Business/Img/Svg/Delivery.svg";
 
 const OurProcess = () => {
   const [isOpen, setIsOpen] = useState(false); // Track the menu state
@@ -26,7 +28,7 @@ const OurProcess = () => {
     document.body.classList.remove("overflow-hidden"); // Ensure class is removed when closing the modal
   };
   return (
-    <div className="my-5 pb-5">
+    <div className="my-5 pb-0 mb-lg-0">
       <Container>
         <h2 className=" ff_Poppins fw-bold fs_36 lh_140 common_clr_blue text-center">
           Our Implementation Process
@@ -38,7 +40,7 @@ const OurProcess = () => {
             className="p-lg-0 d-flex justify-content-lg-center"
           >
             <div className="card_how w-100 h-100">
-              <Card_Box />
+              <img src={assessment_img} alt="" />
               <p className="ff_Poppins fw-semibold lh_118 fs_24 common_clr_blue mb-2 mt-3">
                 Assessment
               </p>
@@ -64,7 +66,7 @@ const OurProcess = () => {
             className="p-lg-0 d-flex justify-content-lg-center mt-3 mt-md-0"
           >
             <div className="card_how w-100 h-100">
-              <Card_calendar />
+              <img src={customizetion_img} alt="" />
               <p className="ff_Poppins fw-semibold lh_118 fs_24 common_clr_blue mb-2 mt-3">
                 Customization
               </p>
@@ -90,7 +92,7 @@ const OurProcess = () => {
             className="p-lg-0 d-flex justify-content-lg-center mt-3 mt-lg-0"
           >
             <div className="card_how w-100 h-100">
-              <Card_graph />
+              <img src={Delivery_img} alt="" />
               <p className="ff_Poppins fw-semibold lh_118 fs_24 common_clr_blue mb-2 mt-3">
                 Delivery
               </p>

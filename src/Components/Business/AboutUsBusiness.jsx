@@ -1,8 +1,10 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { Peoples, Secure } from "../common/Icon";
 import man_img from "../../assets/img/Business/Img/Png/About-us.jpeg";
 import card_img from "../../assets/img/Business/Img/Png/graph-img.png";
+import executive_img from "../../assets/img/Business/Img/Svg/Executive-Leadership.svg";
+import Management_img from "../../assets/img/Business/Img/Svg/Management-Development.svg";
+import sales_img from "../../assets/img/Business/Img/Svg/Sales-Client.svg";
 
 const AboutUsBusiness = () => {
   return (
@@ -20,7 +22,7 @@ const AboutUsBusiness = () => {
             </p>
             <div className="mt-5 text-center text-md-start">
               <div className="d-md-flex align-items-center gap-4">
-                <Secure />
+                <img src={executive_img} alt="" />
                 <div>
                   <p className="ff_Poppins fw-medium fs_20 lh_118 common_clr_blue mb-0">
                     Executive Leadership Program
@@ -35,7 +37,7 @@ const AboutUsBusiness = () => {
                 </div>
               </div>
               <div className="d-md-flex align-items-center gap-4 mt-4 pt-3">
-                <Peoples />
+                <img src={Management_img} alt="" />
                 <div>
                   <p className="ff_Poppins fw-medium fs_20 lh_118 common_clr_blue mb-0">
                     Management Development
@@ -50,7 +52,7 @@ const AboutUsBusiness = () => {
                 </div>
               </div>
               <div className="d-md-flex align-items-center gap-4 mt-4 pt-3">
-                <Peoples />
+                <img src={sales_img} alt="" />
                 <div>
                   <p className="ff_Poppins fw-medium fs_20 lh_118 common_clr_blue mb-0">
                     Sales and Client-Facing Teams

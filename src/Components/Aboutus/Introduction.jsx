@@ -1,31 +1,9 @@
 import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import founder_img from "../../assets/img/Aboutus/Png/Founder-Varun-Dewan.png";
+import founder_img from "../../assets/img/Aboutus/Png/Founder_Varun_Dewan.png";
 import co_founder_img from "../../assets/img/Aboutus/Png/Co-Founder-Winnie-Woo.png";
-import ContactBusiness from "../Summidence/Contantus";
-import cross from "../../assets/img/webp/Cross.svg";
 
 const Introduction = () => {
-  const [isOpen, setIsOpen] = useState(false); // Track the menu state
-  const [showContactForm, setShowContactForm] = useState(false); // Track the contact form visibility
-
-  const toggleContactForm = () => {
-    setShowContactForm((prev) => {
-      const newState = !prev;
-      // Add or remove the 'overflow-hidden' class based on the new state
-      if (newState) {
-        document.body.classList.add("overflow-hidden"); // Prevent scrolling when form is open
-      } else {
-        document.body.classList.remove("overflow-hidden"); // Allow scrolling when form is closed
-      }
-      return newState;
-    });
-  };
-
-  const closeContactForm = () => {
-    setShowContactForm(false); // Close the modal
-    document.body.classList.remove("overflow-hidden"); // Ensure class is removed when closing the modal
-  };
   return (
     <div className="space_introduction px-1">
       <Container>
@@ -44,10 +22,10 @@ const Introduction = () => {
                 Founder
               </p>
               <p className=" ff_Poppins fs_16 fw-normal lh_175 text-black mb-0 me-md-3">
-                Varun Dewan brings a unique blend of technological expertise and
-                communication mastery to Summidence. His innovative approach to
-                public speaking training has revolutionized how people learn and
-                master communication skills.
+                Varun combines his technology expertise and communication skills
+                at Summidence. His passion for public speaking, driven by his
+                belief in its ability to boost self-confidence and leadership,
+                has been pivotal in helping individuals find their voice.
               </p>
             </div>
           </Col>
@@ -58,19 +36,16 @@ const Introduction = () => {
               </p>
               <ul className="m-0 p-0 ps-4">
                 <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
-                  Former Senior Technology Director at leading tech companies
+                  Senior Technology Executive who has delivered speeches in
+                  multiple conferences and continues to do so.
                 </li>
                 <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
-                  Winner of Asia Pacific Public Speaking Championship (2019)
+                  Executive committee members of Glen Iris Toastmasters.
                 </li>
                 <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
-                  Featured speaker at Women in Leadership Summit (2018-2023)
-                </li>
-                <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
-                  Executive Communication Coach for Fortune 500 companies
-                </li>
-                <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
-                  TEDx speaker with "Finding Your Voice in a World of Noise"
+                  Communication coach for multiple businesses and federal
+                  government agencies helping their sales and business
+                  development teams perform t their best abilities.
                 </li>
               </ul>
               <p className="fs_26 ff_Poppins fw-bold lh_175 txt_clr_dark_blue mb-2 mt-3">
@@ -78,31 +53,27 @@ const Introduction = () => {
               </p>
               <ul className="m-0 p-0 ps-4">
                 <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
-                  Mentored over 1,000 professionals in executive communication
+                  Mentored over 100 professionals in executive communication .
                 </li>
                 <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
-                  Pioneered "Speak to Lead" methodology for women in corporate
-                  leadership
+                  Founder of conversational AI tool that helps in evaluating
+                  speeches .
                 </li>
                 <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
-                  Founded "Young Voices" initiative, helping underprivileged
-                  youth develop communication skills
+                  Regular contributor to various Technology Leadership forums .
                 </li>
                 <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
-                  Regular contributor to Leadership Today magazine
-                </li>
-                <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
-                  Advisory board member for Women in Tech Asia
+                  Advisory member for NFPs with Aboriginal affairs at their
+                  heart .
                 </li>
               </ul>
               <p className="fs_26 ff_Poppins fw-bold lh_175 txt_clr_dark_blue mb-2 mt-3">
                 Philosophy
               </p>
               <p className="fs_16 ff_Poppins fw-medium lh_175 txt_clr_dark_blue mb-2 mt-3">
-                "Public speaking isn't just about the words we say – it's about
-                discovering our authentic voice and using it to create positive
-                change in the world. Every person has a unique story and
-                perspective that deserves to be heard."
+                "Public speaking is a journey. We constantly evolve and often
+                surprise ourselves with what we are truly capable of. I call it
+                finding our voice”
               </p>
             </div>
           </Col>
@@ -115,67 +86,84 @@ const Introduction = () => {
                 src={co_founder_img}
                 alt="co_founder_img"
               />
-              <h2 className="fs_26 fw-bold ff_Poppins txt_clr_dark_blue lh_215 mb-0">
+              <h2 className="fs_26 fw-bold ff_Poppins txt_clr_dark_blue mt-3 mb-0">
                 Winnie Woo
               </h2>
-              <p className=" ff_Poppins fs_16 fw-normal lh_175 text-black mb-0">
+              <p className="fs_14 ff_Poppins txt_clr_dark_blue mb-0">
+                (CertIVTAA, B.Pharm., B.Pharm.Sci(Hons),
+                <span className=" d-lg-block"> M.Pharm.Sci, )</span>
+              </p>
+              <p className="ff_Poppins fs_16 fw-normal lh_175 text-black mb-0 mt-4">
                 Co-Founder
               </p>
               <p className=" ff_Poppins fs_16 fw-normal lh_175 text-black mb-0 me-md-3">
-                Co-Founder & Chief Communication OfficerWith over a decade of
-                experience in transforming lives through public speaking, Winnie
-                Woo stands as a beacon of inspiration for aspiring speakers and
-                leaders worldwide. Her journey embodies the very transformation
-                that Summidence promises its clients.
+                With over a decade of public speaking expertise, Winnie is an
+                accomplished Toastmaster and division-level speech competition
+                candidate, with a proven ability to inspire and engage. Backed
+                by 15+ years of experience in sales within the healthcare
+                industry and teaching at university level, Winnie brings a deep
+                understanding of the critical role communication plays in
+                building trust, confidence, and impactful connections. Dedicated
+                to empowering others, Winnie helps individuals master the art of
+                clear and confident expression.
               </p>
             </div>
           </Col>
           <Col lg={8}>
             <div className="mt-md-4 mt-lg-0">
               <p className="fs_26 ff_Poppins fw-bold lh_175 txt_clr_dark_blue mb-2">
-                Professional Highlights
+                Professional Achievement
               </p>
               <ul className="m-0 p-0 ps-4">
                 <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
-                  Former Senior Technology Director at leading tech companies
+                  Qualified Pharmacist
                 </li>
                 <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
-                  Certified Professional Coach (ICF)
+                  Certified Trainer
                 </li>
                 <li className="ff_Poppins fw-normal fs_16 lh_175 text-black me-md-5 pe-md-4">
-                  Creator of "TechSpeak" - a program helping technical
-                  professionals communicate complex ideas simply
+                  Recipient of “Medical Excellence Award” (2023-24)
                 </li>
                 <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
-                  15+ years of experience in coaching public speaking across age
-                  groups
+                  Past president of Glen Iris Toastmasters Club (2023)
                 </li>
                 <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
-                  Pioneer in integrating technology with public speaking
-                  training
+                  Toastmasters of the Year, Glen Iris Toastmasters Club (2022)
+                </li>
+                <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
+                  Winner of humorous speech competition at area level (2022)
+                </li>
+                <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
+                  Communication coach for multiple businesses and federal
+                  government agencies helping their sales and business
+                  development teams perform at their best abilities.
                 </li>
               </ul>
               <p className="fs_26 ff_Poppins fw-bold lh_175 txt_clr_dark_blue mb-2 mt-3">
-                Innovation & Achievement
+                Leadership & Impact
               </p>
               <ul className="m-0 p-0 ps-4">
                 <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
-                  Developed Summidence's proprietary digital learning platform
+                  Regularly present medical/clinical data to various healthcare
+                  professionals from small group settings to workshops settings
                 </li>
                 <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
-                  Led teams of 200+ technology professionals globally
+                  Provides mentorship professionally over the past 10 years
                 </li>
                 <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
-                  Featured speaker at Global Technology Leadership Summit
+                  Facilitation in workshops in healthcare industry
                 </li>
                 <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
-                  Author of "Speak Tech: The Art of Technical Communication"
+                  Volunteers as a mentor to community care groups for young
+                  adults
                 </li>
                 <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
-                  Recipient of "Innovation in Education" award (2022)
+                  Mentors young and new toastmasters members for their
+                  individual growth and development in their public speaking
+                  journey
                 </li>
               </ul>
-              <p className="fs_26 ff_Poppins fw-bold lh_175 txt_clr_dark_blue mb-2 mt-3">
+              {/* <p className="fs_26 ff_Poppins fw-bold lh_175 txt_clr_dark_blue mb-2 mt-3">
                 Teaching Impact
               </p>
               <ul className="m-0 p-0 ps-4">
@@ -194,40 +182,20 @@ const Introduction = () => {
                 <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
                   Regular workshop leader at major tech conferences
                 </li>
-              </ul>
+              </ul> */}
               <p className="fs_26 ff_Poppins fw-bold lh_175 txt_clr_dark_blue mb-2 mt-3">
                 Philosophy
               </p>
               <p className="fs_16 ff_Poppins fw-medium lh_175 txt_clr_dark_blue mb-2 mt-3">
-                "Technology and communication are the two greatest enablers of
-                human potential. When we combine them effectively, we can create
-                unprecedented opportunities for growth and success."Together,
-                Building SummidenceWinnie and Varun's complementary strengths
-                create the foundation of Summidence's unique approach to public
-                speaking training.
+                “I believe public speaking is a journey of self-discovery that
+                builds confidence and unlocks your potential. Through coaching,
+                regular practice, and embracing your inner voice, you can
+                communicate authentically, inspire others, and grow into the
+                leader you’re meant to be.”
               </p>
             </div>
           </Col>
         </Row>
-        <div className=" d-flex justify-content-center align-items-center mt-5">
-          <button
-            className="common_bttn text-white ff_Poppins fw-normal fs_16"
-            onClick={toggleContactForm}
-          >
-            Contact Us
-          </button>
-        </div>
-        {/* Contact Form Modal */}
-        {showContactForm && (
-          <div className="contact-modal">
-            <div className="contact-modal-content">
-              <button onClick={closeContactForm} className="close-btn">
-                <img src={cross} alt="" />
-              </button>
-              <ContactBusiness closeModal={closeContactForm} />
-            </div>
-          </div>
-        )}
       </Container>
     </div>
   );

@@ -1,5 +1,6 @@
 import React from "react";
-import pre_school from "../../assets/img/School/Png/pre-school.png";
+
+import pre_school from "../../assets/img/School/Png/4.jpeg";
 import Kindergarten from "../../assets/img/School/Png/grade-7-8.png";
 import pre_k from "../../assets/img/School/Png/Hero-img.png";
 import { Col, Container, Row } from "react-bootstrap";
@@ -7,19 +8,19 @@ const preschoolData = [
   {
     image: pre_school,
     alt: "pre school",
-    text: "Primary School (Grades 3-6)",
+    text: "Primary School (Year 3-6)",
     para: "Fun, interactive speaking games, storytelling workshops, basic presentation skills, confidence-building exercises, and poetry and dramatic reading.",
   },
   {
     image: Kindergarten,
     alt: "pre school",
-    text: "Middle School (Grades 7-8)",
+    text: "Middle School (Year 7-8)",
     para: "Structured speech preparation, debate fundamentals, voice modulation techniques, body language awareness, and group presentation skills.",
   },
   {
     image: pre_k,
     alt: "pre school",
-    text: "High School (Grades 9-12)",
+    text: "High School (Year 9-12)",
     para: "Advanced presentation techniques, competitive debate training, leadership communication, interview preparation, and college admission speech coaching.",
   },
 ];

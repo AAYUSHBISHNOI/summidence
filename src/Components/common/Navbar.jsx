@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useLocation } from "react-router-dom"; // Import useLocation
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import logo from "../../assets/img/webp/footer-logo.png";
 import ContactBusiness from "../Summidence/Contantus";
 import cross from "../../assets/img/webp/Cross.svg";
@@ -7,11 +7,17 @@ import cross from "../../assets/img/webp/Cross.svg";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showContactForm, setShowContactForm] = useState(false);
-  const location = useLocation(); // Get the current location (pathname)
+  const location = useLocation();
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
-    document.body.classList.toggle("overflow-hidden", isOpen);
+    setIsOpen((prev) => {
+      const newState = !prev;
+      document.body.classList.toggle(
+        "overflow-hidden",
+        newState && window.innerWidth < 1200
+      );
+      return newState;
+    });
   };
 
   const toggleContactForm = () => {
@@ -26,18 +32,29 @@ const Navbar = () => {
     document.body.classList.remove("overflow-hidden");
   };
 
-  // Helper function to check if link is active
   const isActive = (path) => location.pathname === path;
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1200) {
+        setIsOpen(false);
+        document.body.classList.remove("overflow-hidden");
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <nav className="z-3 position-fixed top-0 w-100 bg-white">
       <div className="container custom_container">
         <div className="d-flex align-items-center justify-content-between py-2 bg-white">
-          {/* Logo */}
           <a href="/">
             <img className="navbar_logo" src={logo} alt="Logo" />
           </a>
-          {/* Navigation Links */}
           <ul
             className={`d-flex flex-xl-row flex-column align-items-center mb-0 p-0 ${
               isOpen ? "open" : ""
@@ -48,7 +65,7 @@ const Navbar = () => {
                 onClick={toggleMenu}
                 href="/"
                 className={`ff_Poppins fw-medium position-relative text-decoration-none nav_link ${
-                  isActive("/") ? "text-orange" : "" // Active class for Home
+                  isActive("/") ? "text-orange" : ""
                 }`}
               >
                 Home
@@ -59,7 +76,7 @@ const Navbar = () => {
                 onClick={toggleMenu}
                 href="/Business"
                 className={`ff_Poppins fw-medium position-relative text-decoration-none nav_link ${
-                  isActive("/Business") ? "text-orange" : "" // Active class for Business
+                  isActive("/Business") ? "text-orange" : ""
                 }`}
               >
                 Business
@@ -70,7 +87,7 @@ const Navbar = () => {
                 onClick={toggleMenu}
                 href="/school"
                 className={`ff_Poppins fw-medium position-relative text-decoration-none nav_link ${
-                  isActive("/school") ? "text-orange" : "" // Active class for School
+                  isActive("/school") ? "text-orange" : ""
                 }`}
               >
                 Schools
@@ -81,7 +98,7 @@ const Navbar = () => {
                 onClick={toggleMenu}
                 href="/kids"
                 className={`ff_Poppins fw-medium position-relative text-decoration-none nav_link ${
-                  isActive("/kids") ? "text-orange" : "" // Active class for Students
+                  isActive("/kids") ? "text-orange" : ""
                 }`}
               >
                 Students
@@ -92,7 +109,7 @@ const Navbar = () => {
                 onClick={toggleMenu}
                 href="/about-us"
                 className={`ff_Poppins fw-medium position-relative text-decoration-none nav_link ${
-                  isActive("/about-us") ? "text-orange" : "" // Active class for About Us
+                  isActive("/about-us") ? "text-orange" : ""
                 }`}
               >
                 About us
@@ -107,7 +124,6 @@ const Navbar = () => {
               </button>
             </li>
           </ul>
-          {/* Mobile Menu Button */}
           <button
             className="open d-block d-xl-none navicon"
             onClick={toggleMenu}
@@ -119,7 +135,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Contact Form Modal */}
       {showContactForm && (
         <div className="contact-modal">
           <div className="contact-modal-content">

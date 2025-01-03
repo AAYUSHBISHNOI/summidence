@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import img_one from "../../assets/img/School/Png/1.jpeg";
 import img_three from "../../assets/img/School/Png/3.jpeg";
-import img_four from "../../assets/img/School/Png/4.jpeg";
+import img_four from "../../assets/img/School/Png/pre-school.png";
 import img_six from "../../assets/img/School/Png/6.jpeg";
 import ContactBusiness from "../school/ContactSchool";
 import cross from "../../assets/img/webp/Cross.svg";
@@ -93,22 +93,6 @@ const Gallery = () => {
                 </div>
               </div>
             )}
-            <div className="row justify-content-between mb-2">
-              {/* <div className="col-md-4 col-6 mt-3">
-                <img
-                  className="w-100 h-100 img_gallery"
-                  src={img_five}
-                  alt=""
-                />
-              </div>
-              <div className="col-md-4 col-6 mt-3">
-                <img
-                  className="w-100 h-100 img_gallery ms-auto d-flex"
-                  src={img_six}
-                  alt=""
-                />
-              </div> */}
-            </div>
           </div>
         </div>
       </Container>
