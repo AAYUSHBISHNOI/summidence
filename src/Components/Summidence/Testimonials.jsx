@@ -24,7 +24,7 @@ const Testimonials = () => {
                 Sayali
               </h2>
               <p className="ff_Jakarta fw-medium fs_20 lh_100 common_clr_black mt-md-3 mb-0">
-                Marketing Officer
+                Landscape Architect
               </p>
               <p className="ff_Jakarta fw-medium fs_16 txt_clr_grey lh_122 text-center mb-0 mt-1 mt-md-2 mt-lg-3">
                 Your insights, encouragement, and feedback have been
@@ -49,7 +49,7 @@ const Testimonials = () => {
                 Jessica
               </h2>
               <p className="ff_Jakarta fw-medium fs_20 lh_100 common_clr_black mt-md-3 mb-0">
-                Senior Director of Operations
+                Consultant
               </p>
               <p className="ff_Jakarta fw-medium fs_16 txt_clr_grey lh_122 text-center mb-0 mt-1 mt-md-2 mt-lg-4">
                 Winnie and Varun were very resourceful and provide us a lot of
