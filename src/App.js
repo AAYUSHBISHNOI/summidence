@@ -8,6 +8,7 @@ import Footer from "./Components/common/Footer";
 import Navbar from "./Components/common/Navbar";
 import Business from "./Components/pages/Business";
 import Kids from "./Components/pages/Kids";
+import OurContactUs from "./Components/pages/CommonContactUs";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/about-us" element={<Aboutus />} />
         <Route path="/Business" element={<Business />} />
         <Route path="/kids" element={<Kids />} />
+        <Route path="/our-contact-us" element={<OurContactUs />} />
       </Routes>
       <Footer />
     </>
