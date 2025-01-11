@@ -167,7 +167,7 @@
 }
 /**********************************************************************  Button   ***************************************************************************************************************/
 .form_bttn {
-  padding: 14px 176px;
+  padding: 14px 92px;
   border-radius: 4px;
   background-color: #f7931f;
   border: none;
@@ -363,7 +363,7 @@
   box-shadow: none !important;
   border-radius: 6px !important;
   border: 2px solid #d8d6da;
-  width: 90%;
+  width: 100%;
   position: relative;
 }
 .form-control:focus {
@@ -507,6 +507,9 @@
 .floating-label .form-select:focus {
   border-color: #d8d6da;
 }
+.min_vh_contact{
+  min-height: 45vh;
+}
 
 
 
@@ -520,12 +523,16 @@
 
 
 
-
-
-
+.space_easy{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.bg_easy_way{
+  background:#fde5c9;
+}
 .space_getin_touch{
-  margin-top: 115px;
-  margin-bottom: 115px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 .space_contact {
   margin-bottom: 40px;
@@ -883,8 +890,8 @@
   background-size: cover;
 }
 .img_get_in_touch{
-  max-width: 671px;
-  min-height: 540px;
+  max-width: 290px;
+  min-height: 290px;
   border-radius: 8px;
 }
 .border_col{
@@ -931,9 +938,6 @@
   }
 }
 @media (min-width: 576px) {
-.fs_26{
-    font-size: 26px;
-}
 .border_rIght {
     padding: 10px 12px;
 }
@@ -959,6 +963,24 @@
 }
 }
 @media (min-width: 768px) { 
+  .min_vh_contact {
+    min-height: 65vh;
+}
+  .img_get_in_touch{
+    max-width: 671px;
+    min-height: 540px;
+  }
+  .form_bttn {
+    padding: 14px 277px;
+}
+  .space_getin_touch{
+    margin-top: 115px;
+    margin-bottom: 115px;
+  }
+  .space_easy{
+    padding-top: 63px;
+    padding-bottom: 92px;
+  }
   .card_slider {
     min-height: 380px;
   }
@@ -1166,6 +1188,19 @@
 }
 }
 @media (min-width: 1024px) {
+  .min_vh_contact {
+    min-height: 85vh;
+}
+  .img_get_in_touch {
+    max-width: 525px;
+    min-height: 525px;
+}
+.form_bttn {
+  padding: 14px 123px;
+}
+  .fs_26{
+    font-size: 20px;
+}
   .img_ou_gallery {
     width: 310px;
 }
@@ -1439,6 +1474,19 @@
 }
 }
 @media (min-width: 1438px) {
+  .min_vh_contact {
+    min-height: 100vh;
+}
+  .form_bttn {
+    padding: 14px 195px;
+  }
+  .img_get_in_touch{
+    max-width: 671px;
+    min-height: 540px;
+  }
+  .fs_26{
+    font-size: 26px;
+}
   .img_ou_gallery {
     width: 430px ;
     height: 300px;

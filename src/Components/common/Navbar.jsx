@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/img/webp/footer-logo.png";
 import ContactBusiness from "../Summidence/Contantus";
 import cross from "../../assets/img/webp/Cross.svg";
@@ -115,14 +115,20 @@ const Navbar = () => {
                 About us
               </a>
             </li>
-            <li className="list-unstyled">
+            <Link
+              to="/our-contact-us"
+              className="common_bttn text-white ff_Poppins fw-normal fs_16 text-decoration-none"
+            >
+              Contact Us
+            </Link>
+            {/* <li className="list-unstyled">
               <button
                 className="common_bttn text-white ff_Poppins fw-normal fs_16"
                 onClick={toggleContactForm}
               >
                 Contact Us
               </button>
-            </li>
+            </li> */}
           </ul>
           <button
             className="open d-block d-xl-none navicon"

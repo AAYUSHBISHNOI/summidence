@@ -26,13 +26,13 @@ const GetInTouch = () => {
   };
 
   return (
-    <div className="space_getin_touch">
+    <div className="space_getin_touch" id="contact_us">
       <Container>
         <Row className="d-flex justify-content-between align-items-center">
-          <Col md={6}>
+          <Col lg={6}>
             <img className="img_get_in_touch" src={man_img} alt="" />
           </Col>
-          <Col md={5}>
+          <Col lg={5} className="mt-5 mt-lg-0">
             <div className="border_col position-relative p-4">
               <h2 className="ff_Jakarta fw-semibold fs_36 lh_175 text-black mb-0">
                 Get In Touch Anytime
@@ -75,9 +75,10 @@ const GetInTouch = () => {
                     className="bg-transparent form-control"
                     required
                   >
-                    <option value="Startup">Startup</option>
-                    <option value="Enterprise">Enterprise</option>
-                    <option value="Freelancer">Freelancer</option>
+                    <option value="Startup">Inquiry for Business</option>
+                    <option value="Enterprise">Inquiry for Schools</option>
+                    <option value="Freelancer">Inquiry for Students</option>
+                    <option value="Freelancer">Inquiry for Self </option>
                   </Form.Select>
                   <Form.Label className="floating-label-text">
                     Enquiry Category

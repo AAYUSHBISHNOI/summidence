@@ -22,12 +22,6 @@ const Jason = () => {
               your goals. Your journey to success starts here!
             </p>
           </div>
-          <Link
-            to="/contact-us"
-            className="common_bttn text-white ff_Poppins fw-normal fs_16 text-decoration-none"
-          >
-            Contact Us
-          </Link>
         </div>
       </Container>
     </>
