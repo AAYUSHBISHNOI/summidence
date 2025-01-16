@@ -19,14 +19,13 @@ const Introduction = () => {
                 Winnie Woo
               </h2>
               <p className="fs_14 ff_Poppins txt_clr_dark_blue mb-0">
-                (CertIVTAA, B.Pharm., B.Pharm.Sci(Hons),
-                <span className=" d-lg-block"> M.Pharm.Sci, )</span>
+                CertIVTAA, B.Pharm., B.Pharm.Sci(Hons), M.Pharm.Sci
               </p>
               <p className="ff_Poppins fs_16 fw-normal lh_175 text-black mb-0 mt-4">
-                Founder
+                Co-Founder
               </p>
               <p className=" ff_Poppins fs_16 fw-normal lh_175 text-black mb-0 me-md-3">
-                With over a decade of public speaking expertise, Winnie is an
+                With over a decade of public speaking experience, Winnie is an
                 accomplished Toastmaster and division-level speech competition
                 candidate, with a proven ability to inspire and engage. Backed
                 by 15+ years of experience in sales within the healthcare
@@ -50,18 +49,18 @@ const Introduction = () => {
                 <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
                   Certified Trainer
                 </li>
-                <li className="ff_Poppins fw-normal fs_16 lh_175 text-black me-md-5 pe-md-4">
+                {/* <li className="ff_Poppins fw-normal fs_16 lh_175 text-black me-md-5 pe-md-4">
                   Recipient of “Medical Excellence Award” (2023-24)
-                </li>
+                </li> */}
                 <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
                   Past president of Glen Iris Toastmasters Club (2023)
                 </li>
                 <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
                   Toastmasters of the Year, Glen Iris Toastmasters Club (2022)
                 </li>
-                <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
+                {/* <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
                   Winner of humorous speech competition at area level (2022)
-                </li>
+                </li> */}
                 <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
                   Communication coach for multiple businesses and federal
                   government agencies helping their sales and business
@@ -73,15 +72,16 @@ const Introduction = () => {
               </p>
               <ul className="m-0 p-0 ps-4">
                 <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
-                  Regularly present medical/clinical data to various healthcare
-                  professionals from small group settings to workshops settings
+                  Regularly present and facilitate medical/clinical data to
+                  various healthcare professionals from small group to workshop
+                  settings.
                 </li>
                 <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
                   Provides mentorship professionally over the past 10 years
                 </li>
-                <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
+                {/* <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
                   Facilitation in workshops in healthcare industry
-                </li>
+                </li> */}
                 <li className="ff_Poppins fw-normal fs_16 lh_175 text-black">
                   Volunteers as a mentor to community care groups for young
                   adults
@@ -125,7 +125,7 @@ const Introduction = () => {
             </div>
           </Col>
         </Row>
-        <Row className="pb-lg-5">
+        <Row className="pt-5">
           <Col lg={4}>
             <div>
               <img

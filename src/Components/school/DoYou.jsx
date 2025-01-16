@@ -11,9 +11,9 @@ const DoYou = () => {
                 Nurturing Tomorrow's Leaders Through Public Speaking
               </h1>
               <p className="ff_Jakarta fw-medium fs_16 lh_175 text-white">
-                Empower Your Students with Life-Changing Communication SkillsIn
-                today's rapidly evolving world, the ability to communicate
-                effectively isn't just an advantage – it's essential. At
+                Empower your students with life-changing communication skills in
+                today’s rapidly evolving world. The ability to communicate
+                effectively isn’t just an advantage – it is essential. At
                 Summidence, we partner with schools to develop confident,
                 articulate students who are prepared to lead in their future
                 careers and communities.

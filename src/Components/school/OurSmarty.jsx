@@ -8,19 +8,19 @@ const preschoolData = [
   {
     image: pre_school,
     alt: "pre school",
-    text: "Primary School (Year 3-6)",
+    text: "Primary School (Grade 3-6)",
     para: "Fun, interactive speaking games, storytelling workshops, basic presentation skills, confidence-building exercises, and poetry and dramatic reading.",
   },
   {
     image: Kindergarten,
     alt: "pre school",
-    text: "Middle School (Year 7-8)",
+    text: "Junior High School (Year 7-9)",
     para: "Structured speech preparation, debate fundamentals, voice modulation techniques, body language awareness, and group presentation skills.",
   },
   {
     image: pre_k,
     alt: "pre school",
-    text: "High School (Year 9-12)",
+    text: "Senior High School (Year 10-12)",
     para: "Advanced presentation techniques, competitive debate training, leadership communication, interview preparation, and college admission speech coaching.",
   },
 ];

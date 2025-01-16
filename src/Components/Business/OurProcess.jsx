@@ -3,7 +3,6 @@ import { Col, Container, Row } from "react-bootstrap";
 import assessment_img from "../../assets/img/Business/Img/Svg/Assessment.svg";
 import customizetion_img from "../../assets/img/Business/Img/Svg/Customize.svg";
 import Delivery_img from "../../assets/img/Business/Img/Svg/Delivery.svg";
-import { Link } from "react-router-dom";
 
 const OurProcess = () => {
   const [isOpen, setIsOpen] = useState(false); // Track the menu state
@@ -94,14 +93,6 @@ const OurProcess = () => {
             </div>
           </Col>
         </Row>
-        <div className=" d-flex justify-content-center align-items-center mt-5">
-          <Link
-            to="/our-contact-us"
-            className="common_bttn text-white ff_Poppins fw-normal fs_16 text-decoration-none"
-          >
-            Contact Us
-          </Link>
-        </div>
       </Container>
     </div>
   );

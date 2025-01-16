@@ -14,9 +14,9 @@ const NuturingFuture = () => {
             Social Growth
           </h2>
           <p className="ff_Poppins fw-medium fs_18 lh_151 common_clr_black para_nuture mt-2 mb-0">
-            Our programs build emotional intelligence, critical thinking, and
-            confidence, with 92% of parents noting increased self-assurance and
-            84% improved academics.
+            Our programs foster emotional intelligence, critical thinking, and
+            confidence, with parents observing notable improvements in their
+            children's self-assurance and academic performance.
           </p>
         </div>
         <div class="timeline mt-lg-5 mt-3">

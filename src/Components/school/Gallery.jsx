@@ -55,14 +55,14 @@ const Gallery = () => {
                 />
               </Col>
             </Row>
-            <div className=" d-flex justify-content-center align-items-center mt-5">
+            {/* <div className=" d-flex justify-content-center align-items-center mt-5">
               <Link
                 to="/our-contact-us"
                 className="common_bttn text-white ff_Poppins fw-normal fs_16 text-decoration-none"
               >
                 Contact Us
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </Container>

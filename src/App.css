@@ -59,6 +59,9 @@
 .fs_64 {
   font-size: 37px;
 } 
+.fs_96{
+  font-size: 44px;
+}
 .lh_118 {
   line-height: 118%;
 }
@@ -528,6 +531,7 @@
   padding-bottom: 40px;
 }
 .bg_easy_way{
+  margin-top: 40px;
   background:#fde5c9;
 }
 .space_getin_touch{
@@ -823,12 +827,6 @@
   border-radius: 100px;
   background: linear-gradient(125.65deg, #FEF5DB 0.81%, #F7931F 100%);
 }
-.card_img_about_us {
-  max-width: 216px;
-  min-height: 211px;
-  bottom: -25%;
-  left: 14%;
-}
 .space_home {
   padding: 110px 0;
 }
@@ -963,6 +961,12 @@
 }
 }
 @media (min-width: 768px) { 
+  .bg_easy_way{
+    margin-top: 60px;
+  }
+  .fs_96{
+    font-size: 56px;
+  }
   .min_vh_contact {
     min-height: 65vh;
 }
@@ -1018,12 +1022,6 @@
 }
 .teacher_img {
   min-height: 390px;
-}
-.card_img_about_us {
-  max-width: 233px;
-  min-height: 252px;
-  bottom: -11%;
-  left: 37%;
 }
 .img_business_hero{
     min-height: 530px;
@@ -1188,6 +1186,12 @@
 }
 }
 @media (min-width: 1024px) {
+  .bg_easy_way{
+    margin-top: 90px;
+  }
+  .fs_96{
+    font-size: 96px;
+  }
   .min_vh_contact {
     min-height: 85vh;
 }
@@ -1226,10 +1230,6 @@
 }
 .teacher_img{
     min-height: 568px;
-}
-.card_img_about_us {
-  bottom: -25%;
-  left: 18%;
 }
 .timelinecontainer.left::after {
     left: -3%;
@@ -1347,6 +1347,9 @@
 }
 }
 @media (min-width: 1320px) {
+  .bg_easy_way{
+    margin-top: 140px;
+  }
   .img_ou_gallery {
     width: 360px;
     height: 260px;
@@ -1371,10 +1374,6 @@
 }
 .text_unlock {
     font-size: 46px;
-}
-.card_img_about_us {
-    bottom: -8%;
-    left: -11%;
 }
 .timelinecontainer.left::after {
     left: -2%;

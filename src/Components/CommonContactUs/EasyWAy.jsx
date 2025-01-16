@@ -4,7 +4,7 @@ import { Call, MessageEasy, MessageEmail } from "../common/Icon";
 
 const EasyWAy = () => {
   return (
-    <div className="bg_easy_way space_easy">
+    <div className="bg_easy_way space_easy ">
       <Container>
         <h2 className=" ff_Poppins fs_48 fw lh_132 text-black text-center">
           3 easy ways to get in touch

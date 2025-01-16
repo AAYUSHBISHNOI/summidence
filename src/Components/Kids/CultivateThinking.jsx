@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Down_arrow } from "../common/Icon";
-import boy from "../../assets/img/kids/png/Kid.png";
+import boy from "../../assets/img/kids/png/Kids-Age.jpeg";
 import Kids_drawing from "../../assets/img/kids/png/kids-do-study.png";
-import kids_learning from "../../assets/img/kids/png/Learning-kids.png";
+import kids_learning from "../../assets/img/kids/png/Learning-kids.jpeg";
 import three from "../../assets/img/svg/3.svg";
 import geomatry from "../../assets/img/svg/geomatry.svg";
 import logic_and_pattern from "../../assets/img/svg/logic-and-pattern.png";
@@ -36,9 +36,11 @@ const CultivateThinking = () => {
             Why Public Speaking Matters for Your Child
           </h3>
           <p className="text-center ff_Poppins fw-normal fs_16 lh_151 color_light_black mb-0 para_kids_tab">
-            A Foundation for Lifelong Success Did you know? 75% of children
-            experience speech anxiety, yet early exposure to public speaking can
-            turn this fear into their greatest strength.
+            A Foundation for Lifelong Success:- Speech anxiety is a common
+            challenge among children, but with early exposure to public
+            speaking, it can be transformed into a valuable strength, empowering
+            them to develop confidence, articulate their ideas, seize
+            opportunities, and excel academically and beyond.
           </p>
         </div>
         <div className="nav_tab mx-auto row">
@@ -97,7 +99,7 @@ const CultivateThinking = () => {
                       <img
                         src={boy}
                         alt="boy"
-                        className="image_navtab w-100 h-100 object-fit-cover"
+                        className="image_navtab w-100 h-100 rounded-4"
                       />
                     </Col>
                     <Col
@@ -201,7 +203,7 @@ const CultivateThinking = () => {
                       <img
                         src={kids_learning}
                         alt="boy"
-                        className="image_navtab w-100 h-100"
+                        className="image_navtab w-100 h-100 rounded-4"
                       />
                     </Col>
                     <Col lg={7} className="mt-4 mt-lg-0">
@@ -210,13 +212,13 @@ const CultivateThinking = () => {
                           What Makes Summidence Kids Special?
                         </p>
                         <p className="ff_Poppins fw-medium fs_16 lh_175 ms-2 text-black mb-0 mt-1 mxw_tab_content">
-                          We focus on child-centered learning with small groups,
-                          personalized attention, and a supportive environment
-                          that allows children to progress at their own pace.
-                          Our expert guidance comes from certified youth coaches
-                          with backgrounds in child psychology and education,
-                          ensuring regular progress assessments and updates for
-                          parents.
+                          We prioritize child-centered learning through small
+                          group sessions, personalized attention, and a
+                          supportive environment that fosters growth at each
+                          child’s pace. Our expert public speaking coaches
+                          provide tailored guidance and regular progress
+                          updates, keeping parents informed every step of the
+                          way.
                         </p>
                       </div>
                     </Col>

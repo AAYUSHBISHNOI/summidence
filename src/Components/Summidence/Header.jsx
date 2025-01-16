@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import header_img from "../../assets/img/webp/Hero-img.jpeg";
+import header_img from "../../assets/img/webp/Hero_Img.jpeg";
 
 const Header = () => {
   return (
@@ -23,7 +23,7 @@ const Header = () => {
           </Col>
           <Col lg={5} className="p-xl-0 mt-2 mt-md-4 mt-lg-0">
             <img
-              className="header_img w-100 h-100"
+              className="header_img w-100 h-100 object-fit-cover"
               src={header_img}
               alt="Header"
             />

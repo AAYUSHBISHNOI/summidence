@@ -19,14 +19,15 @@ const AboutOurSchool = () => {
               Success
             </h2>
             <p className="ff_Poppins fw-normal fs_16 lh_151 text-black pt-md-3 mb-xl-3 mb-0">
-              At Summidence, our collaboration with schools yields impressive
-              results in student success, with 87% of students reporting
-              improved class participation and 92% showing enhanced social
-              confidence. Furthermore, 85% of teachers observe better academic
-              performance, while 90% of parents notice improved communication at
-              home. Our programs equip students with vital skills for college
-              interviews, academic presentations, leadership roles, and future
-              career preparation.
+              At Summidence, our partnership with schools fosters remarkable
+              growth in students' academic and personal development. Students
+              gain the confidence to actively participate in class, improve
+              their social skills, and excel in academic performance. Teachers
+              see tangible improvements in student engagement, while parents
+              notice stronger communication skills at home. Our programs are
+              designed to prepare students for college interviews, academic
+              presentations, leadership opportunities, and future careers,
+              equipping them with essential skills for success.
             </p>
             <p className="ff_Poppins fw-normal fs_16 lh_151 text-black pt-3 mb-xl-3 mb-0">
               We offer flexible implementation options, including weekly

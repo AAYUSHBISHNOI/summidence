@@ -32,7 +32,7 @@ const OurGaleery = () => {
                     key={index}
                     md={6}
                     lg={4}
-                    className="d-flex justify-content-center align-items-center"
+                    className="d-flex justify-content-center align-items-center object-fit-cover"
                   >
                     <img
                       className={`img_ou_gallery ${marginClasses[index]}`}

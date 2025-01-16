@@ -7,8 +7,8 @@ const CommonContactUs = () => {
   return (
     <div>
       <OurContactUs />
-      <GetInTouch />
       <EasyWAy />
+      <GetInTouch />
     </div>
   );
 };

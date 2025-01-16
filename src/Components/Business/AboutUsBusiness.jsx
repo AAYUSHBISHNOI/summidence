@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import man_img from "../../assets/img/Business/Img/Png/About-us.jpeg";
+import man_img from "../../assets/img/Business/Img/Png/Summidence-Corporate-advantage-img.jpeg";
 import card_img from "../../assets/img/Business/Img/Png/graph-img.png";
 import executive_img from "../../assets/img/Business/Img/Svg/Executive-Leadership.svg";
 import Management_img from "../../assets/img/Business/Img/Svg/Management-Development.svg";
@@ -55,7 +55,7 @@ const AboutUsBusiness = () => {
                 <img src={sales_img} alt="" />
                 <div>
                   <p className="ff_Poppins fw-medium fs_20 lh_118 common_clr_blue mb-0">
-                    Sales and Client-Facing Teams
+                    Sales and Customer-facing Teams
                   </p>
                   <p className="ff_Poppins fw-normal fs_16 text_clr_grey lh_151 mb-0 mt-2">
                     Our sales team programs cover pitch mastery, client
@@ -69,14 +69,7 @@ const AboutUsBusiness = () => {
             </div>
           </Col>
           <Col lg={6} className="mt-4">
-            <div className="position-relative">
-              <img className="w-100 h-100 rounded-4" src={man_img} alt="" />
-              <img
-                className="w-100 position-absolute card_img_about_us z-1"
-                src={card_img}
-                alt=""
-              />
-            </div>
+            <img className="w-100 h-100 rounded-4" src={man_img} alt="" />
           </Col>
         </Row>
       </Container>

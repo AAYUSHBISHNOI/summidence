@@ -24,10 +24,29 @@ const HowItWorks = () => {
               <p className="ff_Poppins fw-semibold lh_118 fs_24 common_clr_blue mb-0 mt-3">
                 Leadership Development
               </p>
-              <p className="ff_Poppins fs_14 fw-normal lh_118 text_clr_grey mb-0 mt-3">
+              <div className=" d-flex justify-content-center align-items-center">
+                <ul className="ps-0 mb-0">
+                  <li className="text-start ff_Poppins fs_14 fw-normal lh_118 text_clr_grey mb-0 mt-3">
+                    Clear communication
+                  </li>
+                  <li className="text-start ff_Poppins fs_14 fw-normal lh_118 text_clr_grey mb-0 mt-1">
+                    Reduce Conflicts
+                  </li>
+                  <li className="text-start ff_Poppins fs_14 fw-normal lh_118 text_clr_grey mb-0 mt-1">
+                    Enhance Collaboration
+                  </li>
+                  <li className="text-start ff_Poppins fs_14 fw-normal lh_118 text_clr_grey mb-0 mt-1">
+                    Improve virtual team performance
+                  </li>
+                  <li className="text-start ff_Poppins fs_14 fw-normal lh_118 text_clr_grey mb-0 mt-1">
+                    Boost employee confidence
+                  </li>
+                </ul>
+              </div>
+              {/* <p className="ff_Poppins fs_14 fw-normal lh_118 text_clr_grey mb-0 mt-3">
                 * Transform managers into influential
                 <span className="d-block">leaders</span>
-              </p>
+              </p> */}
             </div>
           </Col>
           <Col
@@ -55,13 +74,29 @@ const HowItWorks = () => {
             <div className="card_how w-100 h-100">
               <img src={Client_img} alt="" />
               <p className="ff_Poppins fw-semibold lh_118 fs_24 common_clr_blue mb-0 mt-3">
-                Client Relations
+                Customer Engagements
               </p>
-              <p className="ff_Poppins fs_16 fw-normal lh_118 text_clr_grey mb-0 mt-2 pe-md-4">
+              <div className=" d-flex justify-content-center align-items-center">
+                <ul className="ps-0 mb-0">
+                  <li className="text-start ff_Poppins fs_14 fw-normal lh_118 text_clr_grey mb-0 mt-3">
+                    Delivery of impactful presentati
+                  </li>
+                  <li className="text-start ff_Poppins fs_14 fw-normal lh_118 text_clr_grey mb-0 mt-1">
+                    Communicates complex ideas with clarity
+                  </li>
+                  <li className="text-start ff_Poppins fs_14 fw-normal lh_118 text_clr_grey mb-0 mt-1">
+                    Handle difficult conversations confidently
+                  </li>
+                  <li className="text-start ff_Poppins fs_14 fw-normal lh_118 text_clr_grey mb-0 mt-1">
+                    Win more sales pitches
+                  </li>
+                </ul>
+              </div>
+              {/* <p className="ff_Poppins fs_16 fw-normal lh_118 text_clr_grey mb-0 mt-2 pe-md-4">
                 Win more pitches, strengthen client relationships, deliver
                 impactful presentations, handle difficult conversations, and
                 present complex ideas clearly.
-              </p>
+              </p> */}
             </div>
           </Col>
         </Row>
