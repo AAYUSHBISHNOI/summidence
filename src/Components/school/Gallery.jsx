@@ -43,7 +43,7 @@ const Gallery = () => {
                   alt=""
                 />
               </Col>
-              <Col
+              {/* <Col
                 md={6}
                 lg={3}
                 className="d-flex justify-content-center align-items-center mt-4 mt-lg-0"
@@ -53,7 +53,7 @@ const Gallery = () => {
                   src={img_four}
                   alt=""
                 />
-              </Col>
+              </Col> */}
             </Row>
             {/* <div className=" d-flex justify-content-center align-items-center mt-5">
               <Link
