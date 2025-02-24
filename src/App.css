@@ -170,7 +170,7 @@
 }
 /**********************************************************************  Button   ***************************************************************************************************************/
 .form_bttn {
-  padding: 14px 92px;
+  padding: 14px 76px;
   border-radius: 4px;
   background-color: #f7931f;
   border: none;
@@ -882,7 +882,7 @@
   color: orange !important;
 }
 .bg_contact{
-  background-image: url("../src/assets/img/webp/contact-us.png");
+  background-image: url("../src/assets/img/webp/contact-us.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -896,7 +896,15 @@
   border: 3px solid #ececec;
   border-radius: 4px;
 }
-
+.img_navtabs{
+  max-width: 111px;
+  min-height: 111px;
+  border-radius: 24px;
+}
+.img_upcoming {
+  max-width: 260px;
+  min-height: 180px;
+}
 @media (max-width: 1199.9px) {
   nav {
     position: fixed;
@@ -975,7 +983,7 @@
     min-height: 540px;
   }
   .form_bttn {
-    padding: 14px 277px;
+    padding: 14px 264px;
 }
   .space_getin_touch{
     margin-top: 115px;
@@ -1186,6 +1194,10 @@
 }
 }
 @media (min-width: 1024px) {
+  .img_upcoming{
+    max-width: 580px;
+    min-height: 500px;
+  }
   .bg_easy_way{
     margin-top: 90px;
   }
@@ -1200,7 +1212,7 @@
     min-height: 525px;
 }
 .form_bttn {
-  padding: 14px 123px;
+  padding: 14px 116px;
 }
   .fs_26{
     font-size: 20px;

@@ -5,7 +5,7 @@ import img_two from "../../assets/img/Business/Img/Png/Our-Gallery-2.jpeg";
 import img_three from "../../assets/img/Business/Img/Png/Our-Gallery-4.jpeg";
 import img_four from "../../assets/img/Business/Img/Png/Our-Gallery-5.jpeg";
 import img_five from "../../assets/img/Business/Img/Png/Our-Gallery-6.jpeg";
-import img_six from "../../assets/img/Business/Img/Png/Our-Gallery-7.jpeg";
+import img_six from "../../assets/img/Business/Img/Png/Winne-Woo.png";
 
 const OurGaleery = () => {
   return (

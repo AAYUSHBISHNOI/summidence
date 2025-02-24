@@ -21,6 +21,7 @@ const OurProcess = () => {
           >
             <div className="card_how w-100 h-100">
               <img src={assessment_img} alt="" />
+              
               <p className="ff_Poppins fw-semibold lh_118 fs_24 common_clr_blue mb-2 mt-3">
                 Assessment
               </p>

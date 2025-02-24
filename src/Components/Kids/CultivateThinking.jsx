@@ -4,9 +4,9 @@ import { Down_arrow } from "../common/Icon";
 import boy from "../../assets/img/kids/png/Kids-Age.jpeg";
 import Kids_drawing from "../../assets/img/kids/png/kids-do-study.png";
 import kids_learning from "../../assets/img/kids/png/Learning-kids.jpeg";
-import three from "../../assets/img/svg/3.svg";
-import geomatry from "../../assets/img/svg/geomatry.svg";
-import logic_and_pattern from "../../assets/img/svg/logic-and-pattern.png";
+import three from "../../assets/img/kids/png/Six.jpg";
+import geomatry from "../../assets/img/kids/png/9-12.png";
+import logic_and_pattern from "../../assets/img/kids/png/numbner.png";
 
 const CultivateThinking = () => {
   const [activeTab, setActiveTab] = useState("S2"); // Default active tab
@@ -108,7 +108,11 @@ const CultivateThinking = () => {
                     >
                       <div className="d-md-flex gap-4 mb-4 pb-2">
                         <span>
-                          <img src={three} alt="three" />
+                          <img
+                            className="img_navtabs"
+                            src={three}
+                            alt="three"
+                          />
                         </span>
                         <div className="d-flex flex-column mt-4 mt-md-0">
                           <p className="ff_Poppins fw-semibold fs_32 lh_140 text-black mb-0">
@@ -123,7 +127,11 @@ const CultivateThinking = () => {
                       </div>
                       <div className="d-md-flex gap-4 mb-4 pb-2">
                         <span>
-                          <img src={geomatry} alt="three" />
+                          <img
+                            className="img_navtabs"
+                            src={geomatry}
+                            alt="three"
+                          />
                         </span>
                         <div className="d-flex flex-column mt-4 mt-md-0">
                           <p className="ff_Poppins fw-semibold fs_32 lh_140 text-black mb-0">
@@ -138,7 +146,11 @@ const CultivateThinking = () => {
                       </div>
                       <div className="d-md-flex gap-4 mb-4 pb-2">
                         <span>
-                          <img src={logic_and_pattern} alt="three" />
+                          <img
+                            className="img_navtabs"
+                            src={logic_and_pattern}
+                            alt="three"
+                          />
                         </span>
                         <div className="d-flex flex-column mt-4 mt-md-0">
                           <p className="ff_Poppins fw-semibold fs_32 lh_140 text-black mb-0">
