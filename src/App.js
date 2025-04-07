@@ -1,28 +1,32 @@
-const fs = require("fs");
-const path = require("path");
-const { SitemapStream, streamToPromise } = require("sitemap");
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Summidence from "./Components/pages/Summidence";
+import School from "./Components/pages/School";
+import Aboutus from "./Components/pages/Aboutus";
+import Footer from "./Components/common/Footer";
+import Navbar from "./Components/common/Navbar";
+import Business from "./Components/pages/Business";
+import Kids from "./Components/pages/Kids";
+import OurContactUs from "./Components/pages/CommonContactUs";
+import UpcomingPrograms from "./Components/common/UpcomingPrograms";
 
-const WEBSITE_URL = "https://www.summidence.com"; // No trailing slash here
+function App() {
+  return (
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Summidence />} />
+        <Route path="/school" element={<School />} />
+        <Route path="/about-us" element={<Aboutus />} />
+        <Route path="/Business" element={<Business />} />
+        <Route path="/kids" element={<Kids />} />
+        <Route path="/our-contact-us" element={<OurContactUs />} />
+        <Route path="/upcoming-programs" element={<UpcomingPrograms/>} />
+      </Routes>
+      <Footer />
+    </>
+  );
+}
 
-const pages = [
-  { url: "/", changefreq: "daily", priority: 1.0 },
-  { url: "/school", changefreq: "weekly", priority: 0.8 },
-  { url: "/about-us", changefreq: "monthly", priority: 0.7 },
-  { url: "/Business", changefreq: "weekly", priority: 0.8 },
-  { url: "/kids", changefreq: "weekly", priority: 0.7 },
-  { url: "/our-contact-us", changefreq: "monthly", priority: 0.6 },
-  { url: "/upcoming-programs", changefreq: "weekly", priority: 0.7 },
-];
-
-const sitemap = new SitemapStream({ hostname: WEBSITE_URL });
-
-pages.forEach((page) => {
-  sitemap.write(page);
-});
-
-sitemap.end();
-
-streamToPromise(sitemap).then((data) => {
-  fs.writeFileSync(path.join(__dirname, "public", "sitemap.xml"), data);
-  console.log("✅ Sitemap generated successfully!");
-});
+export default App;
