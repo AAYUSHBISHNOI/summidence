@@ -1,12 +1,11 @@
 import React from "react";
 import { Col, Row, Form, Button } from "react-bootstrap";
 import footer_img from "../../assets/img/webp/footer-logo.png";
-import Instagram from "../../assets/img/svg/Instagram.svg";
-import Facebook from "../../assets/img/svg/Facebook.svg";
 import Linkedin from "../../assets/img/svg/Linkedin.svg";
 import TitterX from "../../assets/img/svg/TwitterX.svg";
 import Youtube from "../../assets/img/svg/Youtube.svg";
 import Business from "./../pages/Business";
+import { Facebook, Instagram, Twiter } from "./Icon";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -42,34 +41,25 @@ const Footer = () => {
             </div>
             <div className="gap-3 d-flex mt-sm-4 mt-2 pt-1 justify-content-start align-items-start">
               <a
-                href="https://www.instagram.com/"
-                className="footer_social_icon d-flex align-items-center justify-content-center"
+                href="https://www.instagram.com/summidence/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <img src={Instagram} alt="instagram" />
+                <Instagram />
               </a>
               <a
-                href="https://www.linkedin.com/feed/"
-                className="footer_social_icon d-flex align-items-center justify-content-center"
+                href="https://www.linkedin.com/company/105306681/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <img src={Linkedin} alt="linkedin" />
+                <Twiter />
               </a>
               <a
-                href="https://www.youtube.com/"
-                className="footer_social_icon d-flex align-items-center justify-content-center"
+                href="https://www.facebook.com/summidence/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <img src={Youtube} alt="youtube" />
-              </a>
-              <a
-                href="https://x.com/?lang=en"
-                className="footer_social_icon d-flex align-items-center justify-content-center"
-              >
-                <img src={TitterX} alt="TwiterX" />
-              </a>
-              <a
-                href="https://www.facebook.com/"
-                className="footer_social_icon d-flex align-items-center justify-content-center"
-              >
-                <img src={Facebook} alt="Facebook" />
+                <Facebook />
               </a>
             </div>
           </Col>

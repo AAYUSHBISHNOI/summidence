@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Form, Container, Row, Col } from "react-bootstrap";
 import man_img from "../../assets/img/webp/Contact-us.jpeg";
+import emailjs from "@emailjs/browser";
 
 const GetInTouch = () => {
   const [formData, setFormData] = useState({
@@ -8,22 +9,64 @@ const GetInTouch = () => {
     email: "",
     phone: "",
     businessType: "",
-    program: "", // New field for Programs dropdown
+    program: "",
     message: "",
   });
   const [error, setError] = useState("");
+  const formRef = useRef();
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
+    setFormData((prev) => ({
+      ...prev,
       [name]: value,
-    });
+    }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Validation and form submission logic here...
+    const { name, email, phone, businessType, program, message } = formData;
+
+    if (
+      !name.trim() ||
+      !email.trim() ||
+      !phone.trim() ||
+      !businessType.trim() ||
+      !program.trim() ||
+      !message.trim()
+    ) {
+      setError("Please fill out all fields.");
+      return;
+    }
+
+    if (!/^\d{10}$/.test(phone)) {
+      setError("Please enter a valid 10-digit phone number.");
+      return;
+    }
+
+    setError("");
+
+    try {
+      await emailjs.sendForm(
+        "service_4yd4mrh", 
+        "template_9l9po8j", 
+        formRef.current,
+        "0kfU2-1AWV0UJWEGL" 
+      );
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        businessType: "",
+        program: "",
+        message: "",
+      });
+      alert("Message sent successfully!");
+    } catch (err) {
+      console.error(err);
+      setError("Failed to send message. Please try again later.");
+    }
   };
 
   return (
@@ -31,25 +74,21 @@ const GetInTouch = () => {
       <Container>
         <Row className="d-flex justify-content-between align-items-center">
           <Col lg={6}>
-            <img className="img_get_in_touch" src={man_img} alt="" />
+            <img className="img_get_in_touch" src={man_img} alt="Contact us" />
           </Col>
           <Col lg={5} className="mt-5 mt-lg-0">
             <div className="border_col position-relative p-4">
               <h2 className="ff_Jakarta fw-semibold fs_36 lh_175 text-black mb-0">
                 Get In Touch Anytime
               </h2>
-              <Form onSubmit={handleSubmit} className="mt-5">
+              <Form ref={formRef} onSubmit={handleSubmit} className="mt-5">
                 {["name", "email", "phone"].map((field) => (
                   <Form.Group
                     key={field}
                     controlId={field}
-                    className={`floating-label mt-4 ${
-                      field === "message" ? "textarea-group" : ""
-                    }`}
+                    className="floating-label mt-4"
                   >
                     <Form.Control
-                      as={field === "message" ? "textarea" : "input"}
-                      rows={field === "message" ? 3 : undefined}
                       type={field === "email" ? "email" : "text"}
                       name={field}
                       value={formData[field]}
@@ -87,7 +126,7 @@ const GetInTouch = () => {
                   </Form.Label>
                 </Form.Group>
 
-                {/* New Dropdown for Programs */}
+                {/* Dropdown for Programs */}
                 <Form.Group controlId="program" className="floating-label mt-4">
                   <Form.Select
                     name="program"
@@ -98,7 +137,7 @@ const GetInTouch = () => {
                   >
                     <option value="">Select Program</option>
                     <option value="workshops">Upcoming workshops</option>
-                    <option value="kids">Kids programs </option>
+                    <option value="kids">Kids programs</option>
                   </Form.Select>
                   <Form.Label className="floating-label-text">
                     Programs
@@ -128,6 +167,7 @@ const GetInTouch = () => {
                 {error && (
                   <p className="text-danger fw-semibold mb-3">{error}</p>
                 )}
+
                 <button
                   type="submit"
                   className="form_bttn mt-3 ff_Jakarta fw-semibold text-white fs_32 lh_118"
