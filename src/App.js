@@ -1,3 +1,4 @@
+// src/App.js
 import React, { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -15,20 +16,20 @@ import UpcomingPrograms from "./Components/common/UpcomingPrograms";
 
 import matomo from "./matomo";
 
-// Custom hook for Matomo page tracking
+// ✅ Matomo SPA tracking hook
 function useMatomoPageTracking() {
   const location = useLocation();
 
   useEffect(() => {
     matomo.trackPageView({
+      href: window.location.href,
       documentTitle: document.title,
     });
   }, [location]);
 }
 
-
 function App() {
-  // Call Matomo tracking hook
+  // ✅ Trigger tracking when route changes
   useMatomoPageTracking();
 
   return (
