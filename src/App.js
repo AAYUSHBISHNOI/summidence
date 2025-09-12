@@ -1,6 +1,6 @@
 // src/App.js
-import React, { useEffect } from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -14,26 +14,9 @@ import Kids from "./Components/pages/Kids";
 import OurContactUs from "./Components/pages/CommonContactUs";
 import UpcomingPrograms from "./Components/common/UpcomingPrograms";
 
-import matomo from "./matomo";
-
-// ✅ Matomo SPA tracking hook
-function useMatomoPageTracking() {
-  const location = useLocation();
-
-  useEffect(() => {
-    matomo.trackPageView({
-      href: window.location.href,
-      documentTitle: document.title,
-    });
-  }, [location]);
-}
-
 function App() {
-  // ✅ Trigger tracking when route changes
-  useMatomoPageTracking();
-
   return (
-    <>
+    <div>
       <Navbar />
       <Routes>
         <Route path="/" element={<Summidence />} />
@@ -45,7 +28,7 @@ function App() {
         <Route path="/upcoming-programs" element={<UpcomingPrograms />} />
       </Routes>
       <Footer />
-    </>
+    </div>
   );
 }
 
