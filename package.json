@@ -2,7 +2,7 @@
   "name": "summidence",
   "version": "0.1.0",
   "private": true,
-"homepage": "/",
+  "homepage": "/",
   "dependencies": {
     "@datapunt/matomo-tracker-js": "^0.5.1",
     "@emailjs/browser": "^4.4.1",
