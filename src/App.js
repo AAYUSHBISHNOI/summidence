@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -15,7 +15,7 @@ import UpcomingPrograms from "./Components/common/UpcomingPrograms";
 
 function App() {
   return (
-    <BrowserRouter basename="/summidence">
+    <>
       <Navbar />
       <Routes>
         <Route path="/" element={<Summidence />} />
@@ -27,7 +27,7 @@ function App() {
         <Route path="/upcoming-programs" element={<UpcomingPrograms />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </>
   );
 }
 
