@@ -1,6 +1,5 @@
-// src/App.js
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -16,7 +15,7 @@ import UpcomingPrograms from "./Components/common/UpcomingPrograms";
 
 function App() {
   return (
-    <div>
+    <BrowserRouter basename="/summidence">
       <Navbar />
       <Routes>
         <Route path="/" element={<Summidence />} />
@@ -28,7 +27,7 @@ function App() {
         <Route path="/upcoming-programs" element={<UpcomingPrograms />} />
       </Routes>
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 
