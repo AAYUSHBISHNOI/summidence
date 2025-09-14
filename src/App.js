@@ -1,5 +1,5 @@
 import React from "react";
-import {Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -12,10 +12,12 @@ import Business from "./Components/pages/Business";
 import Kids from "./Components/pages/Kids";
 import OurContactUs from "./Components/pages/CommonContactUs";
 import UpcomingPrograms from "./Components/common/UpcomingPrograms";
+import MatomoTagManager from "./analytics/MatomoTagManager";
 
 function App() {
   return (
     <>
+      <MatomoTagManager/>
       <Navbar />
       <Routes>
         <Route path="/" element={<Summidence />} />
